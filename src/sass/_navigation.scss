@@ -1,0 +1,18 @@
+nav {
+  margin: 1rem auto 0 auto;
+
+  a {
+    width: 5rem;
+  }
+
+  .logo {
+    fill: blue;
+  }
+
+  .menu {
+    height: 50px;
+    width: 50px;
+    background: black;
+    justify-self: flex-end;
+  }
+}

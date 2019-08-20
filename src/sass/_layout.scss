@@ -1,0 +1,27 @@
+section {
+  width: 100vw;
+  max-width: 850px;
+  margin: 0 auto;
+  transform-style: inherit;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90vw;
+  height: 15vh;
+}
+
+.hero {
+  height: 80vh;
+
+  &--cta {
+    width: 60vw;
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 30rem auto;
+  grid-column-gap: 3rem;
+}
