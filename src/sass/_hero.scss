@@ -1,17 +1,7 @@
-.bar--lgView,
-.bar--mdView {
-  visibility: hidden;
-  position: absolute;
-}
-
 .hero {
-  transform-style: inherit;
-
   .foreground {
-    height: 100%;
     width: 100%;
     position: relative;
-    z-index: 100;
 
     .heading {
       width: fit-content;
@@ -30,12 +20,12 @@
 
       .pretty {
         font-style: italic;
-        // font-size: 4rem;
       }
     }
 
     .browser {
       --width: 100%;
+      display: block;
       width: 30vw;
       height: 18vw;
       min-width: 40rem;
@@ -45,6 +35,7 @@
       position: relative;
       background-color: $browser-bg-color;
       box-shadow: 2px 16px 33px -6px hsla(0, 0%, 28%, 0.35);
+
       .url {
         background-color: $url-color;
         height: 1.5rem;
@@ -61,22 +52,22 @@
           display: grid;
           grid-row-gap: 1rem;
           margin-left: 2rem;
-          margin-top: 3rem;
+          margin-top: 2rem;
         }
 
         &--sm {
           @extend .bar;
-          width: calc(var(--width) * 0.25);
+          visibility: hidden;
         }
 
         &--md {
           @extend .bar;
-          width: calc(var(--width) * 0.4);
+          visibility: hidden;
         }
 
         &--lg {
           @extend .bar;
-          width: calc(var(--width) * 0.5);
+          visibility: hidden;
         }
       }
 
@@ -90,7 +81,7 @@
           display: grid;
           grid-template-columns: 1fr 60%;
           grid-gap: 2rem;
-          height: 45%;
+          height: 50%;
           margin-left: 2rem;
           margin-right: 2rem;
         }
@@ -193,6 +184,12 @@
   }
 }
 
+.bar--lgView,
+.bar--mdView {
+  visibility: hidden;
+  position: absolute;
+}
+
 @media (min-width: 1600px) {
   .bar {
     &--mdView {
@@ -203,6 +200,20 @@
 }
 
 @media (min-width: 1800px) {
+  .hero {
+    .foreground {
+      .browser {
+        .url {
+          height: 2rem;
+        }
+        .panel {
+          &__wrapper {
+            height: 45%;
+          }
+        }
+      }
+    }
+  }
   .bar {
     &--lgView {
       visibility: visible;

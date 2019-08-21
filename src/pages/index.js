@@ -1,7 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Logo from "../components/logo"
+import Logo from "../components/svg/logo"
+import DotCross from "../components/svg/dotCross"
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -66,35 +67,37 @@ const IndexPage = () => (
     </section>
 
     <section className="about">
-      <div className="about--block_left">
+      <div className="about__wrapper">
         <h2>
           Alright, I agree. <br />I think it’s best <br /> you get to know{" "}
           <br /> me first.
         </h2>
-      </div>
-      <div className="about--block_right">
-        <h3>01. About</h3>
-        <p>
-          I’m Sam Tancharoensuksavai it sounds like Thun-cha-lawn-sook-sav-i.
-          I’m a Freelance Front-end Developer and Designer based out of Austin,
-          Texas. I have been writing code for about 6 years (when are you
-          supposed to officially start counting?). That includes my time as a
-          primarily back-end developer at a Fortune 100 company refactoring
-          legacy Java code, securing APIs and shipping lightweight microservices
-          into production. <br /> <br />
-          At my time there, I quickly developed a love for the front-end. I saw
-          it as my chance to flex the more creative and artsy part of my brain,
-          and that’s my favorite part of my brain to flex! I knew I had to
-          pursue this, so I learned some HTML, some CSS, got acquainted Gatsby
-          and fast forward to today, I’m hustlin’ the freelance market and
-          looking to work with good people doing cool things. If you meet those
-          two criteria, feel free to reach out and lets get acquainted like me
-          and my friend Gatsby.
-        </p>
-        <div className="about--link">
-          <a href="/">More about me</a>
-          <div className="bar"></div>
+        <h4>01. About</h4>
+        <div className="about__text">
+          <p>
+            I’m Sam Tancharoensuksavai (sounds like Thun-cha-lawn-sook-sav-i).
+            I’m a Freelance Front-end Developer and Designer based out of
+            Austin, Texas. I have been writing code for about 6 years (when are
+            you supposed to officially start counting?). I’m in a constant
+            pursuit to fuse my passion of technology with my love for design. I
+            enjoy blending my broad interests and drawing inspiration from the
+            world around me.
+          </p>
+          <p>
+            Curious to know a little{" "}
+            <a href="/" className="about__link">
+              more about me?
+            </a>
+          </p>
         </div>
+      </div>
+
+      <div className="about__decor">
+        <DotCross className="cross cross--1"></DotCross>
+        <DotCross className="cross cross--2"></DotCross>
+        <DotCross className="cross cross--3"></DotCross>
+        <DotCross className="cross cross--4"></DotCross>
+        <DotCross className="cross cross--5"></DotCross>
       </div>
     </section>
 

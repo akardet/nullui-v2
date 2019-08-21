@@ -1,62 +1,143 @@
+// .about {
+//   margin: 0 auto;
+
+//   h2 {
+//     color: white;
+//     padding: 2.5rem;
+//   }
+
+//   &--link {
+//     width: 100%;
+//     display: grid;
+//     // grid-template-rows: auto auto;
+//     justify-content: flex-end;
+
+//     a {
+//       margin: 2rem 0 3rem 0;
+//       justify-self: flex-end;
+//       color: #00dbde;
+//       text-decoration: none;
+
+//       &:after {
+//         content: "";
+//         border: 2px solid hsla(181, 100%, 44%, 1);
+//         display: block;
+//       }
+//     }
+
+//     .bar {
+//       width: 40rem;
+//       height: 1rem;
+//       display: block;
+//       background: #fc00ff; /* fallback for old browsers */
+//       background: -webkit-linear-gradient(
+//         to right,
+//         #00dbde,
+//         #fc00ff
+//       ); /* Chrome 10-25, Safari 5.1-6 */
+//       background: linear-gradient(
+//         to right,
+//         #00dbde,
+//         #fc00ff
+//       ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//     }
+//   }
+
+//   &--block {
+//     &_left {
+//       background: #383838;
+//       border-radius: 1rem;
+//     }
+
+//     &_right {
+//       margin-top: 2.5rem;
+
+//       .text {
+//         margin-top: 1.5rem;
+//         margin-bottom: 1rem;
+//         line-height: 3rem;
+//       }
+//     }
+//   }
+// }
+
 .about {
-  margin: 0 auto;
+  position: relative;
+  &__decor {
+    z-index: -2;
+    .cross {
+      fill: blue;
+      position: absolute;
 
-  h2 {
-    color: white;
-    padding: 2.5rem;
-  }
+      &--1 {
+        width: 4.5rem;
+        top: 2rem;
+        right: 10rem;
+      }
 
-  &--link {
-    width: 100%;
-    display: grid;
-    // grid-template-rows: auto auto;
-    justify-content: flex-end;
+      &--2 {
+        width: 4.5rem;
+        top: 83%;
+        left: 8rem;
+      }
 
-    a {
-      margin: 2rem 0 3rem 0;
-      justify-self: flex-end;
-      color: #00dbde;
-      text-decoration: none;
+      &--3 {
+        width: 4.5rem;
+        top: 5rem;
+        left: 43%;
+      }
 
-      &:after {
-        content: "";
-        border: 2px solid hsla(181, 100%, 44%, 1);
-        display: block;
+      &--4 {
+        width: 4.5rem;
+        top: 120%;
+        right: 30%;
+      }
+
+      &--5 {
+        width: 4.5rem;
+        top: -5%;
+        left: 10rem;
       }
     }
 
-    .bar {
-      width: 40rem;
-      height: 1rem;
-      display: block;
-      background: #fc00ff; /* fallback for old browsers */
-      background: -webkit-linear-gradient(
-        to right,
-        #00dbde,
-        #fc00ff
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to right,
-        #00dbde,
-        #fc00ff
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .cross-1 {
+      width: 4rem;
     }
   }
 
-  &--block {
-    &_left {
-      background: #383838;
-      border-radius: 1rem;
-    }
+  h4 {
+    transform: rotate(270deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    left: calc(50% + 5rem);
+    top: 10.6rem;
+  }
 
-    &_right {
-      margin-top: 2.5rem;
+  p {
+    line-height: 2.8rem;
+    width: 35ch;
+    margin-bottom: 3rem;
+  }
 
-      .text {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-        line-height: 3rem;
-      }
-    }
+  p:last-of-type {
+    margin-top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60rem;
+    z-index: -1;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 80%, 0 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 100%, 0 60%);
+    background: radial-gradient(
+      farthest-corner at 120px 190px,
+      hsla(260, 50%, 99%, 1) 0%,
+      hsla(236, 69%, 92%, 1) 53%,
+      hsla(258, 74%, 99%, 1) 100%
+    );
   }
 }
