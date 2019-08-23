@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Logo from "../components/svg/logo"
 import DotCross from "../components/svg/dotCross"
+import Arrow from "../components/svg/arrow"
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -26,9 +27,9 @@ const IndexPage = () => (
           <h4>Freelance Front-end Developer and Designer</h4>
           <h2>
             I set <span className="ugly">ugly</span> web pages on fire and{" "}
-            <br /> make <span className="pretty">beautiful </span>
+            <br /> make <em>beautiful </em>
             and
-            <span className="pretty"> impactful</span> websites <br />
+            <em> impactful</em> websites <br />
             from the ashes
           </h2>
         </div>
@@ -93,6 +94,7 @@ const IndexPage = () => (
       </div>
 
       <div className="about__decor">
+        <Arrow className="arrow"></Arrow>
         <DotCross className="cross cross--1"></DotCross>
         <DotCross className="cross cross--2"></DotCross>
         <DotCross className="cross cross--3"></DotCross>
