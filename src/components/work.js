@@ -1,7 +1,5 @@
-import React, { Component } from "react"
+import React from "react"
 
-export default class Work extends Component {
-  render() {
-    return <div></div>
-  }
+export default function work() {
+  return <div></div>
 }

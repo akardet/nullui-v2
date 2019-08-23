@@ -31,3 +31,9 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+
+.divider {
+  width: 10rem;
+  height: 1rem;
+  background-color: $hero-bar-color;
+}

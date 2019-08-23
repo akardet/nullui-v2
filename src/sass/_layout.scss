@@ -6,14 +6,33 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 90vw;
-  height: 15vh;
+  height: 8vh;
+  align-content: flex-end;
+
+  .menu {
+    justify-self: flex-end;
+  }
 }
 
 .hero {
-  max-width: 90rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
   margin: 0 auto;
-  height: 75vh;
-  // height: 80vh;
+  height: 60vh;
+  margin-top: 30vh;
+
+  .browser {
+    justify-self: flex-end;
+
+    .dots {
+      z-index: 1;
+    }
+  }
+
+  .cta {
+    grid-column: 1 / -1;
+  }
 }
 
 .about {
