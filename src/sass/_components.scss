@@ -5,9 +5,9 @@ button {
   padding: 0.7rem 2.75rem;
   margin: 0;
   text-decoration: none;
-  background: #fff;
-  color: #383838;
-  border: 1px solid #383838;
+  background: rgba(0, 0, 0, 0);
+  color: $base-color-blue;
+  border: 1px solid $base-color-blue;
   border-radius: 30px;
   font-size: var(--p);
   cursor: pointer;
@@ -29,5 +29,11 @@ button:focus {
 }
 
 button:active {
-  transform: scale(0.99);
+  transform: scale(0.95);
+}
+
+.divider {
+  width: 10rem;
+  height: 1rem;
+  margin-bottom: 2rem;
 }

@@ -1,4 +1,6 @@
 nav {
+  position: relative;
+  z-index: 2;
   margin: 1rem auto 0 auto;
 
   a {
@@ -6,13 +8,12 @@ nav {
   }
 
   .logo {
-    fill: blue;
+    fill: $base-color-blue;
   }
 
   .menu {
     height: 50px;
     width: 50px;
-    background: black;
-    justify-self: flex-end;
+    background: $base-color-blue;
   }
 }

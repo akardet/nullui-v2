@@ -4,8 +4,8 @@ const Logo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 429.67 218.65"
-    class="logo"
-    preserveAspectRatio
+    className="logo"
+    preserveAspectRatio="true"
   >
     <title>logo</title>
     <g id="Layer_2" data-name="Layer 2">

@@ -6,34 +6,55 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 90vw;
-  height: 15vh;
+  height: 8vh;
+  align-content: flex-end;
+
+  .menu {
+    justify-self: flex-end;
+  }
 }
 
 .hero {
-  max-width: 90rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
   margin: 0 auto;
-  height: 75vh;
-  // height: 80vh;
+  height: 70vh;
+  margin-top: 15rem;
+  align-items: center;
+
+  .browser {
+    justify-self: flex-end;
+
+    .dots {
+      z-index: 1;
+    }
+  }
+
+  .cta {
+    grid-column: 1 / -1;
+    margin-top: 15rem;
+    &__btn {
+      margin-top: 1.5rem;
+    }
+  }
 }
 
 .about {
   &__wrapper {
     max-width: 90rem;
     margin: 0 auto;
+    margin-top: 20rem;
+    margin-bottom: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    h2,
-    h4,
-    p {
-      margin-top: 5rem;
-      z-index: 1;
-    }
   }
 
   &__text {
     justify-self: flex-end;
   }
+}
 
-  margin-top: 5rem;
+.footer {
+  height: 80vh;
 }
