@@ -79,7 +79,7 @@ const IndexPage = () => (
             Alright, I agree. <br />I think it’s best <br /> you get to know{" "}
             <br /> me first.
           </h1>
-          <h4>01. About</h4>
+          <h4 className="subTitle">01. About</h4>
           <div className="about__text">
             <p>
               I’m <b>Sam Tancharoensuksavai</b> (sounds like
@@ -106,9 +106,9 @@ const IndexPage = () => (
       </section>
     </div>
 
-    <section className="work">
-      <Work />
-    </section>
+    <Work />
+
+    <section className="footer">Footer</section>
   </Layout>
 )
 

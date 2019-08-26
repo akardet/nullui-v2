@@ -6,8 +6,8 @@ button {
   margin: 0;
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
-  color: $primary-color-blue;
-  border: 1px solid $primary-color-blue;
+  color: $base-color-blue;
+  border: 1px solid $base-color-blue;
   border-radius: 30px;
   font-size: var(--p);
   cursor: pointer;
@@ -35,5 +35,5 @@ button:active {
 .divider {
   width: 10rem;
   height: 1rem;
-  background-color: $hero-bar-color;
+  margin-bottom: 2rem;
 }

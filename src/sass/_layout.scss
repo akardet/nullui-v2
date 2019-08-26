@@ -45,6 +45,7 @@ nav {
     max-width: 90rem;
     margin: 0 auto;
     margin-top: 20rem;
+    margin-bottom: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -52,4 +53,8 @@ nav {
   &__text {
     justify-self: flex-end;
   }
+}
+
+.footer {
+  height: 80vh;
 }

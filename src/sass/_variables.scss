@@ -1,5 +1,8 @@
 /* Base Colors */
-$primary-color-blue: hsla(228, 92%, 60%, 1);
+$base-color-blue: hsla(228, 92%, 60%, 1);
+$base-color-dark: hsla(229, 12%, 36%, 1);
+$base-color-lightgrey: hsla(230, 15%, 84%, 1);
+$base-color-white: hsla(244, 100%, 98%, 1);
 
 /* Browser Colors */
 $browser-bg-color: #e9e9f6;
@@ -10,3 +13,6 @@ $panel-color: #f7f6ff;
 /* Shapes Colors */
 $hero-bar-color: hsla(228, 92%, 60%, 1);
 $bg-shape-color: hsla(235, 100%, 95%, 1);
+
+/* Shadows */
+$medium-shadow: (2px 16px 33px -6px hsla(0, 0%, 28%, 0.35));
