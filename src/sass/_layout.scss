@@ -19,8 +19,9 @@ nav {
   grid-template-columns: 1fr 1fr;
   max-width: 100rem;
   margin: 0 auto;
-  height: 60vh;
-  margin-top: 30vh;
+  height: 70vh;
+  margin-top: 15rem;
+  align-items: center;
 
   .browser {
     justify-self: flex-end;
@@ -32,6 +33,10 @@ nav {
 
   .cta {
     grid-column: 1 / -1;
+    margin-top: 15rem;
+    &__btn {
+      margin-top: 1.5rem;
+    }
   }
 }
 
@@ -39,20 +44,12 @@ nav {
   &__wrapper {
     max-width: 90rem;
     margin: 0 auto;
+    margin-top: 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    h2,
-    h4,
-    p {
-      margin-top: 5rem;
-      z-index: 1;
-    }
   }
 
   &__text {
     justify-self: flex-end;
   }
-
-  margin-top: 5rem;
 }

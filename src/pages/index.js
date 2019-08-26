@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Logo from "../components/svg/logo"
+import Work from "../components/work"
 import DotCross from "../components/svg/dotCross"
 import Arrow from "../components/svg/arrow"
 // import SEO from "../components/seo"
@@ -26,12 +27,12 @@ const IndexPage = () => (
         <div className="donut donut--sm"></div>
         <div className="dots dots--lg"></div>
         <div className="dots dots--sm"></div>
-        <Arrow className="arrow"></Arrow>
+        {/* <Arrow className="arrow"></Arrow>
         <DotCross className="cross cross--1"></DotCross>
         <DotCross className="cross cross--2"></DotCross>
         <DotCross className="cross cross--3"></DotCross>
         <DotCross className="cross cross--4"></DotCross>
-        <DotCross className="cross cross--5"></DotCross>
+        <DotCross className="cross cross--5"></DotCross> */}
       </div>
       <section id="hero" className="hero">
         <div className="heading">
@@ -74,20 +75,25 @@ const IndexPage = () => (
 
       <section className="about">
         <div className="about__wrapper">
-          <h2>
+          <h1>
             Alright, I agree. <br />I think it’s best <br /> you get to know{" "}
             <br /> me first.
-          </h2>
+          </h1>
           <h4>01. About</h4>
           <div className="about__text">
             <p>
-              I’m Sam Tancharoensuksavai (sounds like Thun-cha-lawn-sook-sav-i).
-              I’m a Freelance Front-end Developer and Designer based out of
-              Austin, Texas. I have been writing code for about 6 years (when
-              are you supposed to officially start counting?). I’m in a constant
-              pursuit to fuse my passion of technology with my love for design.
-              I enjoy blending my broad interests and drawing inspiration from
-              the world around me.
+              I’m <b>Sam Tancharoensuksavai</b> (sounds like
+              Thun-cha-lawn-sook-sav-i). I’m a
+              <b> Freelance Front-end Developer</b> and <b>Designer</b> based
+              out of Austin, Texas. I have been writing code for about
+              <em>
+                <b> 6 </b>
+              </em>
+              years (when are you supposed to officially start counting?). I’m
+              in a constant pursuit to fuse my <b>passion of technology</b> with
+              my
+              <b> love for design</b>. I enjoy blending my broad interests and
+              drawing inspiration from the world around me.
             </p>
             <p>
               Curious to know a little{" "}
@@ -100,7 +106,9 @@ const IndexPage = () => (
       </section>
     </div>
 
-    <section className="work"></section>
+    <section className="work">
+      <Work />
+    </section>
   </Layout>
 )
 

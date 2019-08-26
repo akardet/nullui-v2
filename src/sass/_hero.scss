@@ -1,7 +1,7 @@
 .hero {
   .heading {
     width: fit-content;
-
+    z-index: 1;
     .divider {
       margin-bottom: 2rem;
       background-color: hsla(228, 92%, 90%, 1);
@@ -94,12 +94,12 @@
       background: -webkit-linear-gradient(
         left top,
         rgba(255, 255, 255, 0) 20%,
-        rgba(242, 222, 145, 1) 100%
+        rgba(120, 146, 245, 1) 100%
       );
       background: linear-gradient(
         left top,
         rgba(255, 255, 255, 0) 20%,
-        rgba(242, 222, 145, 1) 100%
+        rgba(120, 146, 245, 1) 100%
       );
     }
 
@@ -116,65 +116,9 @@
   }
 
   .cta {
-    margin-top: 7rem;
     text-align: center;
-    line-height: 250%;
-
-    &__btn {
-      margin-top: 1rem;
-    }
-  }
-}
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-
-  .donut {
-    border-radius: 50%;
-    position: absolute;
-
-    &--lg {
-      border: 5rem solid $bg-shape-color;
-      height: 30rem;
-      width: 30rem;
-      top: 10%;
-      right: -5rem;
-    }
-
-    &--sm {
-      border: 45px solid $bg-shape-color;
-      height: 250px;
-      width: 250px;
-      bottom: 20%;
-      left: 10rem;
-    }
-  }
-  .dots {
-    position: absolute;
-    background-image: radial-gradient($bg-shape-color 30%, transparent 0);
-    background-size: 5em 5rem;
-    background-position: 0 0;
-    z-index: -1;
-
-    &--lg {
-      height: 25rem;
-      width: 25rem;
-      top: 5%;
-      left: 10%;
-    }
-
-    &--sm {
-      height: 20rem;
-      width: 20rem;
-      bottom: 15%;
-      right: 20%;
-    }
+    line-height: 300%;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -195,16 +139,22 @@
 
 @media (min-width: 1800px) {
   .hero {
-    .foreground {
-      .browser {
-        .url {
-          height: 2rem;
+    .browser {
+      .url {
+        height: 2rem;
+      }
+      .panel {
+        &__wrapper {
+          height: 45%;
         }
-        .panel {
-          &__wrapper {
-            height: 45%;
-          }
-        }
+      }
+      .sphere {
+        top: 8rem;
+        left: 70%;
+      }
+      .dots {
+        top: 4.3rem;
+        left: 80%;
       }
     }
   }
