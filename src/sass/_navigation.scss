@@ -16,9 +16,12 @@ nav {
 
   ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-template-columns: repeat(3, 8rem);
+    grid-gap: 2rem;
     list-style: none;
     font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    justify-items: flex-end;
+    justify-content: flex-end;
   }
 }

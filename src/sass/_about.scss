@@ -14,4 +14,12 @@
   p:last-of-type {
     margin-top: 0;
   }
+
+  &__link {
+    color: $base-color-accent;
+
+    &:after {
+      transform: scaleX(1);
+    }
+  }
 }
