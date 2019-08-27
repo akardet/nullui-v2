@@ -55,6 +55,42 @@ nav {
   }
 }
 
+.work {
+  position: relative;
+  max-width: 90rem;
+  width: 100vw;
+  height: 170rem;
+  margin: 0 auto;
+}
+
 .footer {
-  height: 80vh;
+  height: 100vh;
+  position: relative;
+  background-color: $base-color-dark;
+  &__wrapper {
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h1,
+    h3 {
+      grid-column: 1 / 2;
+    }
+
+    p,
+    button {
+      grid-column: 2 / -1;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin-bottom: 4rem;
+    }
+  }
 }

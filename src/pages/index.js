@@ -76,7 +76,7 @@ const IndexPage = () => (
       <section className="about">
         <div className="about__wrapper">
           <h1>
-            Alright, I agree. <br />I think it’s best <br /> you get to know{" "}
+            Alright, I agree. <br />I think it’s best <br /> you get to know
             <br /> me first.
           </h1>
           <h4 className="subTitle">01. About</h4>
@@ -108,7 +108,36 @@ const IndexPage = () => (
 
     <Work />
 
-    <section className="footer">Footer</section>
+    <section className="footer">
+      <div className="footer__wrapper">
+        <div className="quote">
+          <h4 className="subTitle">03. Contact</h4>
+          <h1>
+            Design is <br />
+            by the people
+            <br />
+            for the people
+          </h1>
+          <h3>- Judy Wert</h3>
+        </div>
+        <div className="closing">
+          <p>
+            I love what I do, and find any opportunity as a new challenge to try
+            and deliver a thoughtful and holistic experience for the final
+            product, but also for the person or people I’m working with.
+          </p>
+          <p>
+            If you think I might be the right person for the job, feel free to
+            drop in and tell me more!
+          </p>
+          <button className="cta__btn">Let's Talk</button>
+          <p>
+            If you want to keep up with what I’m working on, or if you just want
+            to say ‘Hi’, you can find me on the following platforms.
+          </p>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 

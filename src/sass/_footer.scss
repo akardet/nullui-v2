@@ -1,0 +1,20 @@
+.footer {
+  color: $base-color-white;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    top: 27rem;
+    left: -5rem;
+  }
+
+  .closing {
+    text-align: center;
+
+    p {
+      text-align: left;
+    }
+  }
+}

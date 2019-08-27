@@ -2,7 +2,7 @@ button {
   display: inline-block;
   justify-self: flex-start;
   border: none;
-  padding: 0.7rem 2.75rem;
+  padding: 1rem 3rem;
   margin: 0;
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
@@ -19,17 +19,39 @@ button {
 
 button:hover,
 button:focus {
-  background: #383838;
-  color: #fff;
+  background: $base-color-blue;
+  color: $base-color-white;
 }
 
 button:focus {
-  outline: 1px solid #fff;
+  outline: 1px solid $base-color-blue;
   outline-offset: -4px;
 }
 
 button:active {
   transform: scale(0.95);
+}
+
+.footer {
+  &__wrapper {
+    .closing {
+      button {
+        border: 1px solid $base-color-white;
+        color: currentColor;
+      }
+
+      button:hover,
+      button:focus {
+        background: $base-color-white;
+        color: $base-color-dark;
+      }
+
+      button:focus {
+        outline: 1px solid $base-color-white;
+        outline-offset: -4px;
+      }
+    }
+  }
 }
 
 .divider {

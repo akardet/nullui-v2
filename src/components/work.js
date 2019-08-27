@@ -7,9 +7,10 @@ export default () => (
   <StaticQuery
     query={graphql`
       query MyQuery {
-        allContentfulWork {
+        allContentfulWork(sort: { fields: contentfulid }) {
           edges {
             node {
+              id
               title
               subHeading
               heroImage {
@@ -24,6 +25,13 @@ export default () => (
     `}
     render={data => (
       <section className="work">
+        <div className="work__shapes">
+          <div className="sphere sphere--lg sphere-1"></div>
+          <div className="sphere sphere--lg sphere-2"></div>
+          <div className="sphere sphere--md sphere-3"></div>
+          <div className="sphere sphere--md sphere-4"></div>
+          <div className="sphere sphere--sm sphere-5"></div>
+        </div>
         <div className="divider"></div>
         <h1>
           A collection of things I've made

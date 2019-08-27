@@ -104,3 +104,27 @@
     left: 20%;
   }
 }
+.sphere {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(
+    left top,
+    hsla(0, 0%, 100%, 0) 20%,
+    hsla(237, 35%, 85%, 1) 100%
+  );
+
+  &--lg {
+    height: 300px;
+    width: 300px;
+  }
+
+  &--md {
+    height: 250px;
+    width: 250px;
+  }
+
+  &--sm {
+    height: 200px;
+    width: 200px;
+  }
+}
