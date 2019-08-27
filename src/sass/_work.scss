@@ -65,8 +65,8 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: (2px 25px 30px -6px hsla(0, 0%, 28%, 0.25));
+      transform: scale(1.01);
+      box-shadow: (2px 25px 20px -6px hsla(0, 0%, 28%, 0.2));
     }
 
     &--wrapper {
