@@ -36,14 +36,15 @@ button:active {
   &__wrapper {
     .closing {
       button {
+        padding: 1.3rem 5rem;
+        font-size: 1.6rem;
         border: 1px solid $base-color-white;
         color: currentColor;
       }
 
       button:hover,
       button:focus {
-        background: $base-color-white;
-        color: $base-color-dark;
+        background: hsla(229, 12%, 53%, 1);
       }
 
       button:focus {

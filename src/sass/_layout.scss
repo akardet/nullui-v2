@@ -73,7 +73,7 @@ nav {
     margin: 0 auto;
     padding-top: 15rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 50rem;
 
     h1,
     h3 {
@@ -87,10 +87,15 @@ nav {
 
     p {
       margin-bottom: 1rem;
+
+      &:nth-of-type(2),
+      &:last-of-type {
+        margin-bottom: 3rem;
+      }
     }
 
     button {
-      margin-bottom: 4rem;
+      margin-bottom: 12rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from "react"
 
 const Chevron = ({ className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 50 50">
+  <svg xmlns="http://www.w3.org/2000/svg" class={className} viewBox="0 0 50 50">
     <title>chevron_right</title>
     <g data-name="Livello 2">
       <path fill="none" d="M0 0h48v48H0z" />

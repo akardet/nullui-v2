@@ -4,7 +4,7 @@ const Arrow = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 252 252"
-    className={className}
+    class={className}
   >
     <title>arrow</title>
     <g id="Layer_2" data-name="Layer 2">

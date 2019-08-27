@@ -4,7 +4,7 @@ const DotCross = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 432 432"
-    className={className}
+    class={className}
   >
     <title>dot-cross</title>
     <g id="Layer_2" data-name="Layer 2">

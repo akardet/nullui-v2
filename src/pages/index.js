@@ -5,6 +5,7 @@ import Logo from "../components/svg/logo"
 import Work from "../components/work"
 import DotCross from "../components/svg/dotCross"
 import Arrow from "../components/svg/arrow"
+import Social from "../components/social"
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -121,6 +122,7 @@ const IndexPage = () => (
           <h3>- Judy Wert</h3>
         </div>
         <div className="closing">
+          <div className="divider"></div>
           <p>
             I love what I do, and find any opportunity as a new challenge to try
             and deliver a thoughtful and holistic experience for the final
@@ -131,11 +133,16 @@ const IndexPage = () => (
             drop in and tell me more!
           </p>
           <button className="cta__btn">Let's Talk</button>
+          <div className="divider"></div>
           <p>
             If you want to keep up with what I’m working on, or if you just want
             to say ‘Hi’, you can find me on the following platforms.
           </p>
+          <Social />
         </div>
+      </div>
+      <div className="footer__terms">
+        <p>&#169; Copyright 2019 nullui</p>
       </div>
     </section>
   </Layout>
