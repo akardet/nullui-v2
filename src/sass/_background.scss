@@ -21,40 +21,45 @@
 
 .arrow {
   position: absolute;
-  fill: blue;
+  fill: $base-color-blue;
   width: 5rem;
-  top: -4rem;
+  bottom: 2rem;
   left: calc(50% - 2.5rem);
 }
 
 .cross {
-  fill: blue;
+  fill: $base-color-blue;
   position: absolute;
   width: 6.5rem;
 
   &--1 {
-    top: 2rem;
-    right: 10rem;
+    bottom: -45rem;
+    left: 10%;
   }
 
   &--2 {
-    top: 83%;
-    left: 8rem;
+    bottom: -10rem;
+    left: 30%;
   }
 
   &--3 {
-    top: 5rem;
-    left: 43%;
+    bottom: -65rem;
+    right: 20%;
   }
 
   &--4 {
-    top: 120%;
-    right: 30%;
+    bottom: -20rem;
+    right: 2%;
   }
 
   &--5 {
-    top: -5%;
-    left: 10rem;
+    bottom: -50rem;
+    left: 40%;
+  }
+
+  &--6 {
+    bottom: -75rem;
+    left: 30%;
   }
 }
 

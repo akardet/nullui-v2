@@ -11,15 +11,27 @@ import Social from "../components/social"
 const IndexPage = () => (
   <Layout>
     <nav id="navigation">
-      <a href="/">
+      <a className="navigation__logo" href="/">
         <Logo />
       </a>
-      <div className="menu">
-        <div className="menu__icon">
-          <div className="line--top"></div>
-          <div className="line--mid"></div>
-          <div className="line--btm"></div>
-        </div>
+      <div className="links">
+        <ul>
+          <li>
+            <a href="#about" className="links__text">
+              about
+            </a>
+          </li>
+          <li>
+            <a href="#work" className="links__text">
+              work
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="links__text">
+              contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
     <div className="background">
@@ -28,12 +40,13 @@ const IndexPage = () => (
         <div className="donut donut--sm"></div>
         <div className="dots dots--lg"></div>
         <div className="dots dots--sm"></div>
-        {/* <Arrow className="arrow"></Arrow>
+        <Arrow className="arrow"></Arrow>
         <DotCross className="cross cross--1"></DotCross>
         <DotCross className="cross cross--2"></DotCross>
         <DotCross className="cross cross--3"></DotCross>
         <DotCross className="cross cross--4"></DotCross>
-        <DotCross className="cross cross--5"></DotCross> */}
+        <DotCross className="cross cross--5"></DotCross>
+        <DotCross className="cross cross--6"></DotCross>
       </div>
       <section id="hero" className="hero">
         <div className="heading">
@@ -74,7 +87,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section className="about">
+      <section id="about" className="about">
         <div className="about__wrapper">
           <h1>
             Alright, I agree. <br />I think it’s best <br /> you get to know
@@ -109,7 +122,7 @@ const IndexPage = () => (
 
     <Work />
 
-    <section className="footer">
+    <section id="contact" className="footer">
       <div className="footer__wrapper">
         <div className="quote">
           <h4 className="subTitle">03. Contact</h4>

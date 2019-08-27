@@ -24,7 +24,7 @@ export default () => (
       }
     `}
     render={data => (
-      <section className="work">
+      <section id="work" className="work">
         <div className="work__shapes">
           <div className="sphere sphere--lg sphere-1"></div>
           <div className="sphere sphere--lg sphere-2"></div>

@@ -3,17 +3,22 @@ nav {
   z-index: 2;
   margin: 1rem auto 0 auto;
 
-  a {
-    width: 5rem;
+  .navigation__logo {
+    &:after {
+      visibility: hidden;
+    }
   }
 
   .logo {
     fill: $base-color-blue;
+    width: 5rem;
   }
 
-  .menu {
-    height: 50px;
-    width: 50px;
-    background: $base-color-blue;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    list-style: none;
+    font-size: 1.4rem;
   }
 }

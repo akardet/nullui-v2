@@ -55,6 +55,35 @@ button:active {
   }
 }
 
+a {
+  text-decoration: none;
+  color: $base-color-accent;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: $base-color-accent;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover,
+  &:active {
+    color: $base-color-accent;
+
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
 .divider {
   width: 10rem;
   height: 1rem;
