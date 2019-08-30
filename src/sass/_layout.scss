@@ -110,12 +110,6 @@ nav {
   }
 }
 
-// @media only screen and (max-width: $ds-small) {
-//   .hero {
-//     grid-gap: 2rem;
-//   }
-// }
-
 @media only screen and (max-width: $ds-shmedium) {
   .hero {
     .browser {
@@ -148,6 +142,20 @@ nav {
       grid-row: 3;
       grid-column: 2;
       margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-small) {
+  nav {
+    height: 5vh;
+  }
+
+  .hero {
+    margin-top: 5rem;
+
+    .heading {
+      margin-top: -5rem;
     }
   }
 }
