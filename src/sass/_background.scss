@@ -147,22 +147,23 @@
       border: 4rem solid $bg-shape-light;
       height: 30rem;
       width: 30rem;
-      right: -10rem;
+      right: 19rem;
+      top: 4rem;
     }
 
     &--sm {
       border: 3.5rem solid $bg-shape-light;
       height: 25rem;
       width: 25rem;
-      bottom: 4%;
-      left: -2rem;
+      bottom: -16%;
+      left: -7rem;
     }
   }
 
   .dots {
     &--lg {
-      bottom: 40%;
-      right: -30%;
+      bottom: 29%;
+      right: -33%;
     }
 
     &--sm {
