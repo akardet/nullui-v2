@@ -16,7 +16,7 @@ nav {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr repeat(2, minmax(350px, 500px)) 1fr;
+  grid-template-columns: 1fr repeat(2, minmax(300px, 500px)) 1fr;
   grid-gap: 5rem;
   height: 70vh;
   margin-top: 15rem;
@@ -110,40 +110,16 @@ nav {
   }
 }
 
-@media only screen and (max-width: $ds-small) {
+// @media only screen and (max-width: $ds-small) {
+//   .hero {
+//     grid-gap: 2rem;
+//   }
+// }
+
+@media only screen and (max-width: $ds-shmedium) {
   .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 27rem 50rem;
-    margin-top: 7rem;
-    align-items: initial;
-
-    .heading {
-      grid-row: 2;
-      max-width: 32rem;
-      margin: 0 auto;
-      margin-top: 0;
-    }
-
-    .cta {
-      margin-top: 0;
-    }
-  }
-
-  .about {
-    &__wrapper {
-      max-width: 32rem;
-      margin-top: 50rem;
-      grid-template-columns: 1fr;
-      grid-template-rows: 500px 500px;
-
-      & h1 {
-        grid-row: 1;
-      }
-
-      & p {
-        grid-row: 2;
-      }
+    .browser {
+      height: 90%;
     }
   }
 }
@@ -151,11 +127,10 @@ nav {
 @media only screen and (max-width: $ds-medium) {
   .hero {
     display: grid;
-    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+    grid-template-columns: 1fr minmax(300px, 450px) 1fr;
     grid-template-rows: 300px 300px auto;
+    grid-gap: 9rem 5rem;
     margin-top: 7rem;
-    // justify-content: center;
-    // justify-items: center;
 
     .browser {
       grid-row: 1;
