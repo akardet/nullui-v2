@@ -71,16 +71,17 @@
     border: 5rem solid $bg-shape-color;
     height: 40rem;
     width: 40rem;
-    top: -5rem;
-    right: -8rem;
+    top: -13rem;
+
+    right: -13rem;
   }
 
   &--sm {
-    border: 45px solid hsla(230, 65%, 96%, 1);
+    border: 45px solid $bg-shape-color;
     height: 30rem;
     width: 30rem;
-    bottom: 20%;
-    left: 10rem;
+    bottom: -11%;
+    left: -7rem;
   }
 }
 
@@ -94,19 +95,17 @@
     background-image: radial-gradient($bg-shape-color 30%, transparent 0);
     height: 25rem;
     width: 25rem;
-    bottom: 15%;
-    right: 20%;
+    bottom: 10%;
+
+    right: -8%;
   }
 
   &--sm {
-    background-image: radial-gradient(
-      hsla(230, 60%, 96%, 1) 30%,
-      transparent 0
-    );
+    background-image: radial-gradient($bg-shape-color 30%, transparent 0);
     height: 20rem;
     width: 20rem;
-    top: 5%;
-    left: 20%;
+    top: -9%;
+    left: 19%;
   }
 }
 .sphere {
@@ -144,7 +143,7 @@
   }
   .donut {
     &--lg {
-      border: 4rem solid $bg-shape-light;
+      border: 4rem solid $bg-shape-color;
       height: 30rem;
       width: 30rem;
       right: 19rem;
@@ -152,7 +151,7 @@
     }
 
     &--sm {
-      border: 3.5rem solid $bg-shape-light;
+      border: 3.5rem solid $bg-shape-color;
       height: 25rem;
       width: 25rem;
       bottom: -16%;

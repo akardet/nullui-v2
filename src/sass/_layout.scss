@@ -52,12 +52,12 @@ nav {
 
 .about {
   &__wrapper {
-    max-width: 90rem;
+    // max-width: 90rem;
     margin: 0 auto;
     margin-top: 20rem;
     margin-bottom: 50rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(300px, 450px)) 1fr;
   }
 
   &__text {
