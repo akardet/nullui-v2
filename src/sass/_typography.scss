@@ -52,3 +52,11 @@ small,
 .text_small {
   font-size: calc(var(--base-size) / var(--type-scale));
 }
+
+@media only screen and (max-width: $ds-medium) {
+  .hero {
+    & p {
+      line-height: 3.8rem;
+    }
+  }
+}
