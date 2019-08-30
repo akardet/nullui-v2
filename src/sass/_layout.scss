@@ -16,12 +16,22 @@ nav {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 100rem;
-  margin: 0 auto;
+  grid-template-columns: 1fr repeat(2, minmax(350px, 500px)) 1fr;
+  grid-gap: 5rem;
   height: 70vh;
   margin-top: 15rem;
-  align-items: center;
+
+  .heading {
+    grid-column: 2 / 3;
+
+    & h3 {
+      max-width: 40rem;
+    }
+
+    & h4 {
+      max-width: 32rem;
+    }
+  }
 
   .browser {
     justify-self: flex-end;
@@ -33,7 +43,7 @@ nav {
 
   .cta {
     grid-column: 1 / -1;
-    margin-top: 15rem;
+    margin-top: 10rem;
     &__btn {
       margin-top: 1.5rem;
     }
@@ -96,6 +106,73 @@ nav {
 
     .btn {
       margin-bottom: 12rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-small) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 27rem 50rem;
+    margin-top: 7rem;
+    align-items: initial;
+
+    .heading {
+      grid-row: 2;
+      max-width: 32rem;
+      margin: 0 auto;
+      margin-top: 0;
+    }
+
+    .cta {
+      margin-top: 0;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      max-width: 32rem;
+      margin-top: 50rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 500px 500px;
+
+      & h1 {
+        grid-row: 1;
+      }
+
+      & p {
+        grid-row: 2;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-medium) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+    grid-template-rows: 300px 300px auto;
+    margin-top: 7rem;
+    // justify-content: center;
+    // justify-items: center;
+
+    .browser {
+      grid-row: 1;
+      grid-column: 2;
+      justify-self: auto;
+    }
+
+    .heading {
+      width: 100%;
+      grid-row: 2;
+      grid-column: 2;
+    }
+
+    .cta {
+      grid-row: 3;
+      grid-column: 2;
+      margin-top: 0;
     }
   }
 }

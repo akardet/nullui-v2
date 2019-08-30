@@ -133,3 +133,45 @@
     width: 200px;
   }
 }
+
+@media only screen and (max-width: $ds-small) {
+  .background {
+    &::before {
+      height: 225rem;
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
+    }
+  }
+  .donut {
+    &--lg {
+      border: 4rem solid $bg-shape-light;
+      height: 30rem;
+      width: 30rem;
+      right: -10rem;
+    }
+
+    &--sm {
+      border: 3.5rem solid $bg-shape-light;
+      height: 25rem;
+      width: 25rem;
+      bottom: 4%;
+      left: -2rem;
+    }
+  }
+
+  .dots {
+    &--lg {
+      bottom: 40%;
+      right: -30%;
+    }
+
+    &--sm {
+      background-image: radial-gradient(
+        hsla(230, 63%, 94%, 1) 30%,
+        transparent 0
+      );
+      top: 80%;
+      left: 25rem;
+    }
+  }
+}

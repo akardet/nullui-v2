@@ -55,7 +55,7 @@ export default class IndexPage extends Component {
             <div className="donut donut--sm"></div>
             <div className="dots dots--lg"></div>
             <div className="dots dots--sm"></div>
-            <Arrow className="arrow"></Arrow>
+            {/* <Arrow className="arrow"></Arrow> */}
             <DotCross className="cross cross--1"></DotCross>
             <DotCross className="cross cross--2"></DotCross>
             <DotCross className="cross cross--3"></DotCross>
@@ -66,25 +66,22 @@ export default class IndexPage extends Component {
           <section id="hero" className="hero">
             <div className="heading">
               <div className="divider"></div>
-              <h3>
-                Freelance Front-end Developer <br />
-                and Designer
-              </h3>
+              <h3>Freelance Front-end Developer and Designer</h3>
               <h4>
-                Doing my part to make the web a more <br />
-                <b>beautiful</b> and <b>inclusive</b> place for everyone.
+                Doing my part to make the web a more <b>beautiful</b> and{" "}
+                <b>inclusive</b> place for everyone.
               </h4>
             </div>
             <div className="browser">
               <div className="url"></div>
               <div className="bar__wrapper">
-                <div className="bar--sm"></div>
-                <div className="bar--lg"></div>
-                <div className="bar--lg"></div>
-                <div className="bar--md"></div>
-                <div className="bar--md"></div>
-                <div className="bar--md bar--mdView"></div>
-                <div className="bar--sm bar--lgView"></div>
+                <div className="bar--sm bar-1"></div>
+                <div className="bar--lg bar-2"></div>
+                <div className="bar--lg bar-3"></div>
+                <div className="bar--md bar-4"></div>
+                <div className="bar--md bar-5"></div>
+                <div className="bar--md bar-6"></div>
+                <div className="bar--sm bar-7"></div>
               </div>
               <div className="panel__wrapper">
                 <div className="panel"></div>
