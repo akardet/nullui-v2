@@ -29,7 +29,7 @@ nav {
     }
 
     & h4 {
-      max-width: 32rem;
+      max-width: 27ch;
     }
   }
 
@@ -57,11 +57,18 @@ nav {
     margin-top: 20rem;
     margin-bottom: 50rem;
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(300px, 450px)) 1fr;
+    grid-template-columns:
+      1fr minmax(300px, 400px) 100px minmax(300px, 400px)
+      1fr;
+    grid-gap: 3rem;
+  }
+
+  & h1 {
+    grid-column: 2;
   }
 
   &__text {
-    justify-self: flex-end;
+    grid-column: 4;
   }
 }
 
