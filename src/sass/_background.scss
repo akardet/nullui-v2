@@ -137,7 +137,7 @@
     overflow-x: hidden;
 
     &::before {
-      height: 200rem;
+      height: 194rem;
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
     }
@@ -188,11 +188,11 @@
 
     &--2 {
       bottom: -39rem;
-      left: 93%;
+      left: 86%;
     }
 
     &--3 {
-      bottom: -65rem;
+      bottom: -689rem;
       right: 1%;
     }
 
@@ -207,7 +207,7 @@
     }
 
     &--6 {
-      bottom: -72rem;
+      bottom: -130rem;
       left: 30%;
     }
   }
