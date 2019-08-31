@@ -134,6 +134,8 @@
 
 @media only screen and (max-width: $ds-small) {
   .background {
+    overflow-x: hidden;
+
     &::before {
       height: 200rem;
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);

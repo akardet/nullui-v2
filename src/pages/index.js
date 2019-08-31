@@ -103,8 +103,8 @@ export default class IndexPage extends Component {
 
           <section id="about" className="about">
             <div className="about__wrapper">
+              <div className="divider"></div>
               <h1 data-aos="fade-right">
-                <div className="divider"></div>
                 Alright, I agree. I think it’s best you get to know me first.
               </h1>
 
