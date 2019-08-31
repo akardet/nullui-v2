@@ -123,3 +123,13 @@
     }
   }
 }
+
+@media only screen and (max-width: $ds-small) {
+  .work {
+    h4 {
+      transform: rotate(0deg);
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}

@@ -188,4 +188,25 @@ nav {
       grid-column: 2;
     }
   }
+
+  .work {
+    margin-top: -10rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 555px) 1fr;
+    grid-template-rows: auto auto 255px auto;
+    grid-gap: 1rem 3rem;
+
+    .divider,
+    h1,
+    h4,
+    &__card--wrapper {
+      grid-column: 2;
+    }
+
+    h4 {
+      grid-row: 1;
+    }
+    // grid-template-rows: auto auto 255px auto;
+  }
 }

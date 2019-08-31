@@ -48,7 +48,7 @@ export default class Work extends Component {
               <div className="sphere sphere--md sphere-4"></div>
               <div className="sphere sphere--sm sphere-5"></div>
             </div>
-            <div className="divider" data-aos="fade-right"></div>
+            <div className="divider"></div>
             <h1 data-aos="fade-right">
               A collection of things I've made
               <br />
