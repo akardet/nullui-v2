@@ -2,12 +2,12 @@
   position: relative;
 
   h4 {
-    left: calc(50% + 3.5rem);
-    top: 9.6rem;
+    margin-top: 9.7rem;
+    padding-top: 8rem;
   }
 
   p {
-    width: 38ch;
+    max-width: 38ch;
     margin-bottom: 3rem;
   }
 
@@ -20,6 +20,24 @@
 
     &:after {
       transform: scaleX(1);
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-medium) {
+  .about {
+    .divider {
+      background-color: hsla(228, 92%, 90%, 1);
+    }
+
+    p {
+      max-width: fit-content;
+    }
+
+    h4 {
+      transform: rotate(0);
+      padding-top: 0;
+      margin-top: 0;
     }
   }
 }
