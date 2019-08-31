@@ -23,3 +23,21 @@
     }
   }
 }
+
+@media only screen and (max-width: $ds-medium) {
+  .about {
+    .divider {
+      background-color: hsla(228, 92%, 90%, 1);
+    }
+
+    p {
+      max-width: fit-content;
+    }
+
+    h4 {
+      transform: rotate(0);
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}

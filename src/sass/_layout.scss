@@ -57,10 +57,8 @@ nav {
     margin-top: 20rem;
     margin-bottom: 50rem;
     display: grid;
-    grid-template-columns:
-      1fr minmax(300px, 400px) 100px minmax(300px, 400px)
-      1fr;
-    grid-gap: 3rem;
+    grid-template-columns: 1fr minmax(320px, 350px) 100px minmax(320px, 350px) 1fr;
+    grid-gap: 4rem;
   }
 
   & h1 {
@@ -149,6 +147,24 @@ nav {
       grid-row: 3;
       grid-column: 2;
       margin-top: 0;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 1fr minmax(300px, 555px) 1fr;
+      grid-template-rows: auto 320px auto;
+      margin-top: 40rem;
+    }
+
+    h1,
+    h4,
+    &__text {
+      grid-column: 2;
+    }
+
+    h4 {
+      grid-row: 1;
     }
   }
 }
