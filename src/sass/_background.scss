@@ -135,7 +135,7 @@
 @media only screen and (max-width: $ds-small) {
   .background {
     &::before {
-      height: 225rem;
+      height: 190rem;
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
     }
@@ -171,6 +171,42 @@
       );
       top: 80%;
       left: 25rem;
+    }
+  }
+
+  .cross {
+    fill: $base-color-blue;
+    position: absolute;
+    width: 6.5rem;
+
+    &--1 {
+      bottom: -30rem;
+      left: 14%;
+    }
+
+    &--2 {
+      bottom: -37rem;
+      left: 93%;
+    }
+
+    &--3 {
+      bottom: -63rem;
+      right: 1%;
+    }
+
+    &--4 {
+      bottom: -129rem;
+      right: -1%;
+    }
+
+    &--5 {
+      bottom: -120rem;
+      left: 11%;
+    }
+
+    &--6 {
+      bottom: -69rem;
+      left: 30%;
     }
   }
 }
