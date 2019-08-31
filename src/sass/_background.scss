@@ -135,7 +135,7 @@
 @media only screen and (max-width: $ds-small) {
   .background {
     &::before {
-      height: 190rem;
+      height: 200rem;
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
     }
@@ -180,17 +180,17 @@
     width: 6.5rem;
 
     &--1 {
-      bottom: -30rem;
+      bottom: -32rem;
       left: 14%;
     }
 
     &--2 {
-      bottom: -37rem;
+      bottom: -39rem;
       left: 93%;
     }
 
     &--3 {
-      bottom: -63rem;
+      bottom: -65rem;
       right: 1%;
     }
 
@@ -200,12 +200,12 @@
     }
 
     &--5 {
-      bottom: -120rem;
+      bottom: -122.5rem;
       left: 11%;
     }
 
     &--6 {
-      bottom: -69rem;
+      bottom: -72rem;
       left: 30%;
     }
   }
