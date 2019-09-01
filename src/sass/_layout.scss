@@ -83,7 +83,7 @@ nav {
 
   .divider,
   h1,
-  &__card--wrapper {
+  .cards__wrapper {
     grid-column: 2;
   }
 
@@ -92,45 +92,34 @@ nav {
     grid-row: 1;
   }
 
-  &__card--wrapper,
-  [class="work__card--wrapper"] {
-    width: 100%;
-    margin-top: 5rem;
-    position: relative;
-  }
+  .card {
+    margin-bottom: 5rem;
 
-  &__card {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: max-content max-content 1fr;
-    padding: 2rem 3rem;
-    grid-template-areas:
-      "title img"
-      "subheading img"
-      "view img";
-
-    .card {
-      &--accent {
-        position: absolute;
-        top: 0;
-        right: -13rem;
-      }
-
-      &--title {
-        grid-area: title;
-      }
-
-      &--subheading {
-        grid-area: subheading;
-      }
+    &__link {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-template-rows: max-content max-content 1fr;
+      padding: 2rem 3rem;
+      grid-template-areas:
+        "title img"
+        "subheading img"
+        "view img";
     }
 
-    .view__wrapper {
+    &__title {
+      grid-area: title;
+    }
+
+    &__subheading {
+      grid-area: subheading;
+    }
+
+    &__view {
       grid-area: view;
       align-self: flex-end;
     }
 
-    .img__wrapper {
+    &__img {
       grid-area: img;
       justify-self: center;
       align-self: center;
@@ -173,23 +162,24 @@ nav {
   .work {
     grid-column-gap: 3rem;
 
-    &__card {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "title"
-        "subheading"
-        "img";
+    .card {
+      &__link {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "title"
+          "subheading"
+          "img";
 
-      padding: 1rem;
-      justify-content: center;
-      justify-items: center;
-
-      .view__wrapper {
+        padding: 1rem;
+        justify-content: center;
+        justify-items: center;
+      }
+      &__view {
         position: absolute;
         visibility: hidden;
       }
 
-      .img__wrapper {
+      &__img {
         align-self: flex-end;
       }
     }

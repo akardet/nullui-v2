@@ -53,24 +53,22 @@ export default class Work extends Component {
               A collection of things I've made for myself and for others
             </h1>
             <h4 className="subTitle">02. Work</h4>
-            <div className="work__card--wrapper">
-              <ul data-aos="fade-up" data-aos-delay="300">
+            <div className="cards__wrapper">
+              <ul ddata-aos="fade-up" ddata-aos-delay="300">
                 {data.allContentfulWork.edges.map(({ node: card }) => {
                   return (
-                    <li className="work__card">
-                      {/* <div className="card--accent"></div> */}
-                      <h2 className="card--title">{card.title}</h2>
-                      <h4 className="card--subheading">{card.subHeading}</h4>
-                      <div className="view__wrapper">
-                        <p>Click to View</p>
-                        <Chevron className="view--arrow" />
-                      </div>
-                      <div className="img__wrapper">
-                        <Image
-                          className="card--img"
-                          fluid={card.heroImage.fluid}
-                        />
-                      </div>
+                    <li className="card">
+                      <a href="/" className="card__link">
+                        <h2 className="card__title">{card.title}</h2>
+                        <h4 className="card__subheading">{card.subHeading}</h4>
+                        <div className="card__view">
+                          <p>Click to View</p>
+                          <Chevron className="arrow" />
+                        </div>
+                        <div className="card__img">
+                          <Image fluid={card.heroImage.fluid} />
+                        </div>
+                      </a>
                     </li>
                   )
                 })}

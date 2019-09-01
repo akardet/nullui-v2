@@ -4,6 +4,7 @@
     max-width: 25ch;
   }
 
+  // Styling the subtitle (02. Work)
   h1 + h4 {
     color: $base-color-lightgrey;
     opacity: 1;
@@ -47,44 +48,57 @@
     }
   }
 
-  &__card {
-    --cardHeight: 35rem;
-    --mockupHeight: 230px;
-    height: var(--cardHeight);
-    border-radius: 1.5rem;
+  ul {
+    list-style: none;
+  }
+
+  .cards__wrapper {
+    margin-top: 6rem;
+  }
+
+  .card {
+    height: 35rem;
     background-image: linear-gradient(
-      to right,
+      left bottom,
       hsla(229, 12%, 48%, 1) 10%,
       hsla(229, 12%, 36%, 1) 100%
     );
-
-    color: hsla(235, 49%, 75%, 1);
-    margin-bottom: 8rem;
+    border-radius: 1.5rem;
     box-shadow: $medium-shadow;
-    position: relative;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
-
-    h2,
-    h4 {
-      z-index: 10;
-    }
-
-    h2 {
-      color: hsla(224, 16%, 89%, 1);
-    }
 
     &:hover {
       transform: translateY(-0.5rem) scale(1.01);
       box-shadow: (4px 15px 25px -3px rgba(71, 71, 71, 0.65));
     }
 
-    &--wrapper {
-      width: fit-content;
-      margin: 0 auto;
+    &__title {
+      color: hsla(224, 16%, 89%, 1);
+      font-size: 5rem;
     }
 
-    .img__wrapper {
+    &__link {
+      height: inherit;
+      color: hsla(235, 49%, 75%, 1);
+      text-decoration: none;
+
+      &:hover {
+        color: none;
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+
+      .arrow {
+        width: 3rem;
+        fill: hsla(235, 49%, 75%, 1);
+      }
+    }
+
+    &__img {
       width: 40rem;
       position: relative;
       z-index: 1;
@@ -103,55 +117,13 @@
         background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bbc0ce' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
     }
-
-    .card {
-      position: relative;
-      &--accent {
-        clip-path: polygon(69% 0, 100% 0, 100% 100%, 0% 100%);
-        background: radial-gradient(
-          farthest-corner at 120px 190px,
-          hsla(260, 50%, 99%, 0.65) 0%,
-          hsla(236, 69%, 94%, 0.85) 43%,
-          hsla(258, 74%, 99%, 1) 100%
-        );
-        height: calc(var(--cardHeight) + 2px);
-        width: 60rem;
-        position: absolute;
-      }
-
-      &--title {
-        font-weight: 900;
-        font-size: 4.5rem;
-        letter-spacing: 1px;
-      }
-    }
-
-    .view {
-      &__wrapper {
-        // position: absolute;
-        // bottom: 2rem;
-        display: flex;
-        align-items: center;
-
-        p {
-          text-transform: lowercase;
-          letter-spacing: 1px;
-        }
-      }
-      &--arrow {
-        height: 4rem;
-        width: 4rem;
-        fill: currentColor;
-      }
-    }
   }
 }
 
 @media only screen and (max-width: $ds-725) {
   .work {
-    &__card {
-      padding-bottom: 2rem;
-      .img__wrapper {
+    .card {
+      &__img {
         width: 35rem;
         &::after {
           top: 0rem;
@@ -164,12 +136,11 @@
 
 @media only screen and (max-width: $ds-shmedium) {
   .work {
-    &__card {
-      .card--title {
-        font-size: 3rem;
-        letter-spacing: 1px;
+    .card {
+      &__title {
+        font-size: 3.5rem;
       }
-      .img__wrapper {
+      &__img {
         width: 29rem;
         align-self: center;
         &::after {
@@ -178,32 +149,4 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: $ds-small) {
-  // .work {
-  //   &__card {
-  //     .card {
-  //       &--accent {
-  //         width: 27rem;
-  //         right: -91px;
-  //       }
-
-  //       &--title {
-  //         font-size: var(--h2);
-  //         letter-spacing: 0px;
-  //       }
-  //     }
-
-  //     .view__wrapper {
-  //       visibility: hidden;
-  //     }
-
-  //     .img__wrapper {
-  //       right: -9rem;
-  //       top: 11.5rem;
-  //       width: 33rem;
-  //     }
-  //   }
-  // }
 }

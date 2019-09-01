@@ -1,8 +1,4 @@
 .background {
-  position: relative;
-  z-index: -1;
-  margin-top: -1rem;
-
   &::before {
     content: "";
     position: absolute;
@@ -27,13 +23,13 @@
   }
 }
 
-.arrow {
-  position: absolute;
-  fill: $primary-blue;
-  width: 5rem;
-  bottom: 2rem;
-  left: calc(50% - 2.5rem);
-}
+// .arrow {
+//   position: absolute;
+//   fill: $primary-blue;
+//   width: 5rem;
+//   bottom: 2rem;
+//   left: calc(50% - 2.5rem);
+// }
 
 .cross {
   fill: $primary-blue;
@@ -41,32 +37,32 @@
   width: 6.5rem;
 
   &--1 {
-    bottom: 38rem;
+    bottom: -61rem;
     left: 10%;
   }
 
   &--2 {
-    bottom: -10rem;
+    bottom: -11rem;
     left: 12%;
   }
 
   &--3 {
-    bottom: 55rem;
-    right: 20%;
+    bottom: -74rem;
+    right: 37%;
   }
 
   &--4 {
     bottom: -7rem;
-    right: 32%;
+    right: 11%;
   }
 
   &--5 {
-    bottom: -18rem;
+    bottom: -61rem;
     left: 88%;
   }
 
   &--6 {
-    bottom: 6rem;
+    bottom: -44rem;
     left: 28%;
   }
 }
@@ -87,7 +83,7 @@
     border: 45px solid $bg-shape-color;
     height: 30rem;
     width: 30rem;
-    bottom: 35%;
+    bottom: 7%;
     left: -13rem;
   }
 }
@@ -102,7 +98,7 @@
     background-image: radial-gradient($bg-shape-color 30%, transparent 0);
     height: 25rem;
     width: 25rem;
-    bottom: 52%;
+    bottom: 7%;
     right: -8%;
   }
 

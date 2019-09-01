@@ -46,17 +46,17 @@ export default class IndexPage extends Component {
             <div className="links">
               <ul>
                 <li>
-                  <a href="#about" className="links__text">
+                  <a href="#about" className="link">
                     about
                   </a>
                 </li>
                 <li>
-                  <a href="#work" className="links__text">
+                  <a href="#work" className="link">
                     work
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="links__text">
+                  <a href="#contact" className="link">
                     contact
                   </a>
                 </li>
