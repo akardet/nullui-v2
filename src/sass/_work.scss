@@ -52,7 +52,6 @@
     --mockupHeight: 230px;
     height: var(--cardHeight);
     border-radius: 1.5rem;
-    // background-color: $base-color-dark;
     background-image: linear-gradient(
       to right,
       hsla(229, 12%, 48%, 1) 10%,
@@ -60,7 +59,6 @@
     );
 
     color: hsla(235, 49%, 75%, 1);
-
     margin-bottom: 8rem;
     box-shadow: $medium-shadow;
     position: relative;
@@ -77,9 +75,8 @@
     }
 
     &:hover {
-      transform: translateY(-0.5rem);
-      // box-shadow: (2px 25px 20px -6px hsla(0, 0%, 28%, 0.2));
-      box-shadow: (2px 25px 20px -6px hsla(0, 0%, 40%, 0.3));
+      transform: translateY(-0.5rem) scale(1.01);
+      box-shadow: (4px 15px 25px -3px rgba(71, 71, 71, 0.65));
     }
 
     &--wrapper {
