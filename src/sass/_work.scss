@@ -16,9 +16,10 @@
 
   &__shapes {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 200%;
     z-index: -1;
+    overflow-x: hidden;
 
     .sphere {
       &-1 {
@@ -80,7 +81,7 @@
 
     &__link {
       height: inherit;
-      color: hsla(235, 49%, 75%, 1);
+      color: hsla(232, 100%, 89%, 1);
       text-decoration: none;
 
       &:hover {
@@ -94,7 +95,7 @@
 
       .arrow {
         width: 3rem;
-        fill: hsla(235, 49%, 75%, 1);
+        fill: hsla(232, 100%, 89%, 1);
       }
     }
 
