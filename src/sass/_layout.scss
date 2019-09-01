@@ -15,7 +15,6 @@ nav {
 }
 
 .hero {
-  overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr repeat(2, minmax(300px, 500px)) 1fr;
   grid-gap: 5rem;
@@ -52,7 +51,6 @@ nav {
 }
 
 .about {
-  // overflow-x: hidden;
   &__wrapper {
     margin-top: 20rem;
     margin-bottom: 50rem;
@@ -76,13 +74,12 @@ nav {
 }
 
 .work {
-  // overflow-x: hidden;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 1rem 5rem;
-  // margin-top: 15rem;
+
   .divider,
   h1,
   &__card--wrapper {
@@ -141,7 +138,6 @@ nav {
 }
 
 .footer {
-  overflow-x: hidden;
   height: 100vh;
   background-color: $base-color-dark;
   position: relative;
@@ -170,8 +166,6 @@ nav {
 
     &__card {
       grid-template-columns: 1fr;
-      // grid-template-rows: max-content max-content 1fr;
-      // padding: 2rem 3rem;
       grid-template-areas:
         "title"
         "subheading"
@@ -241,15 +235,6 @@ nav {
       margin-top: 5rem;
     }
   }
-
-  // .work {
-  //   margin-top: -10rem;
-  //   height: auto;
-  //   display: grid;
-  //   grid-template-columns: 1fr minmax(300px, 555px) 1fr;
-  //   grid-template-rows: auto auto 255px auto;
-  //   grid-gap: 1rem 3rem;
-  // }
 }
 
 @media only screen and (max-width: $ds-small) {

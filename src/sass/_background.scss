@@ -1,7 +1,4 @@
 .background {
-  &__shapes {
-    overflow-x: hidden;
-  }
   z-index: -1;
   &::before {
     content: "";
