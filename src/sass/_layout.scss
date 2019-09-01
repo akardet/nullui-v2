@@ -15,6 +15,7 @@ nav {
 }
 
 .hero {
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr repeat(2, minmax(300px, 500px)) 1fr;
   grid-gap: 5rem;
@@ -51,6 +52,7 @@ nav {
 }
 
 .about {
+  overflow-x: hidden;
   &__wrapper {
     margin-top: 20rem;
     margin-bottom: 50rem;
@@ -74,12 +76,13 @@ nav {
 }
 
 .work {
+  overflow-x: hidden;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 1rem 5rem;
-
+  // margin-top: 15rem;
   .divider,
   h1,
   &__card--wrapper {
@@ -138,8 +141,10 @@ nav {
 }
 
 .footer {
+  overflow-x: hidden;
   height: 100vh;
   background-color: $base-color-dark;
+  position: relative;
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(100px, 500px)) 1fr;
@@ -194,7 +199,7 @@ nav {
     grid-template-columns: 1fr minmax(300px, 450px) 1fr;
     grid-template-rows: 300px 300px auto;
     grid-gap: 9rem 5rem;
-    margin-top: 7rem;
+    margin-top: -10rem;
 
     .browser {
       grid-row: 1;
