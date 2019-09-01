@@ -30,8 +30,8 @@ export default class Work extends Component {
                   title
                   subHeading
                   heroImage {
-                    fixed(height: 230) {
-                      ...GatsbyContentfulFixed
+                    fluid(maxWidth: 320) {
+                      ...GatsbyContentfulFluid_withWebp
                     }
                   }
                 }
@@ -50,21 +50,15 @@ export default class Work extends Component {
             </div>
             <div className="divider"></div>
             <h1 data-aos="fade-right">
-              A collection of things I've made
-              <br />
-              for myself and for others
+              A collection of things I've made for myself and for others
             </h1>
             <h4 className="subTitle">02. Work</h4>
-            <div
-              className="work__card--wrapper"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <ul>
+            <div className="work__card--wrapper">
+              <ul ddata-aos="fade-up" ddata-aos-delay="300">
                 {data.allContentfulWork.edges.map(({ node: card }) => {
                   return (
                     <li className="work__card">
-                      <div className="card--accent"></div>
+                      {/* <div className="card--accent"></div> */}
                       <h2 className="card--title">{card.title}</h2>
                       <h4 className="card--subheading">{card.subHeading}</h4>
                       <div className="view__wrapper">
@@ -74,7 +68,7 @@ export default class Work extends Component {
                       <div className="img__wrapper">
                         <Image
                           className="card--img"
-                          fixed={card.heroImage.fixed}
+                          fluid={card.heroImage.fluid}
                         />
                       </div>
                     </li>

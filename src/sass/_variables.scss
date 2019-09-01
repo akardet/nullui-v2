@@ -1,11 +1,14 @@
 /* Device Sizes */
 $ds-small: 26.25em; // 420px
 $ds-shmedium: 31.25em; // 500px
+$ds-725: 45.3125em;
 $ds-medium: 53.75em; // 860px
 $ds-large: 56.25em; // 900px
 
 /* Base Colors */
-$base-color-blue: hsla(228, 92%, 60%, 1);
+$primary-blue: hsla(228, 92%, 60%, 1);
+$primary-blue-light1: hsla(228, 91%, 68%, 1);
+$primary-blue-light2: hsla(228, 90%, 77%, 1);
 $base-color-light: hsla(228, 92%, 90%, 1);
 $base-color-dark: hsla(229, 12%, 36%, 1);
 $base-color-lightgrey: hsla(230, 15%, 84%, 1);

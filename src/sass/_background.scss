@@ -1,4 +1,5 @@
 .background {
+  overflow-x: hidden;
   z-index: -1;
   &::before {
     content: "";
@@ -21,14 +22,14 @@
 
 .arrow {
   position: absolute;
-  fill: $base-color-blue;
+  fill: $primary-blue;
   width: 5rem;
   bottom: 2rem;
   left: calc(50% - 2.5rem);
 }
 
 .cross {
-  fill: $base-color-blue;
+  fill: $primary-blue;
   position: absolute;
   width: 6.5rem;
 
@@ -132,14 +133,19 @@
   }
 }
 
+@media only screen and (max-width: $ds-medium) {
+  .background {
+    &::before {
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+    }
+  }
+}
+
 @media only screen and (max-width: $ds-small) {
   .background {
-    overflow-x: hidden;
-
     &::before {
       height: 194rem;
-      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
-      clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 50% 100%, 0 97%);
     }
   }
   .donut {
@@ -177,7 +183,7 @@
   }
 
   .cross {
-    fill: $base-color-blue;
+    fill: $primary-blue;
     position: absolute;
     width: 6.5rem;
 
