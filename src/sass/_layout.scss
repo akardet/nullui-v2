@@ -74,7 +74,7 @@ nav {
 }
 
 .work {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;

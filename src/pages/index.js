@@ -25,30 +25,6 @@ export default class IndexPage extends Component {
   render() {
     return (
       <Layout>
-        <nav id="navigation">
-          <a className="navigation__logo" href="/">
-            <Logo />
-          </a>
-          <div className="links">
-            <ul>
-              <li>
-                <a href="#about" className="links__text">
-                  about
-                </a>
-              </li>
-              <li>
-                <a href="#work" className="links__text">
-                  work
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="links__text">
-                  contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
         <div className="background">
           <div className="background__shapes">
             <div className="donut donut--lg"></div>
@@ -63,6 +39,30 @@ export default class IndexPage extends Component {
             <DotCross className="cross cross--5"></DotCross>
             <DotCross className="cross cross--6"></DotCross>
           </div>
+          <nav id="navigation">
+            <a className="navigation__logo" href="/">
+              <Logo />
+            </a>
+            <div className="links">
+              <ul>
+                <li>
+                  <a href="#about" className="links__text">
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a href="#work" className="links__text">
+                    work
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="links__text">
+                    contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
           <section id="hero" className="hero">
             <div className="heading">
               <div className="divider"></div>

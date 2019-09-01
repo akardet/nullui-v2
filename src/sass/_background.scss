@@ -1,10 +1,7 @@
 .background {
-  &__shapes {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
+  position: relative;
   z-index: -1;
+
   &::before {
     content: "";
     position: absolute;
@@ -22,6 +19,11 @@
       hsla(258, 74%, 99%, 1) 100%
     );
   }
+
+  &__shapes {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }
 
 .arrow {
@@ -38,33 +40,33 @@
   width: 6.5rem;
 
   &--1 {
-    bottom: -45rem;
+    bottom: 38rem;
     left: 10%;
   }
 
   &--2 {
     bottom: -10rem;
-    left: 30%;
+    left: 12%;
   }
 
   &--3 {
-    bottom: -65rem;
+    bottom: 55rem;
     right: 20%;
   }
 
   &--4 {
-    bottom: -20rem;
-    right: 2%;
+    bottom: -7rem;
+    right: 32%;
   }
 
   &--5 {
-    bottom: -50rem;
-    left: 40%;
+    bottom: -18rem;
+    left: 88%;
   }
 
   &--6 {
-    bottom: -75rem;
-    left: 30%;
+    bottom: 6rem;
+    left: 28%;
   }
 }
 
@@ -84,7 +86,7 @@
     border: 45px solid $bg-shape-color;
     height: 30rem;
     width: 30rem;
-    bottom: -5%;
+    bottom: 35%;
     left: -13rem;
   }
 }
@@ -99,8 +101,7 @@
     background-image: radial-gradient($bg-shape-color 30%, transparent 0);
     height: 25rem;
     width: 25rem;
-    bottom: 10%;
-
+    bottom: 52%;
     right: -8%;
   }
 
@@ -108,8 +109,8 @@
     background-image: radial-gradient($bg-shape-color 30%, transparent 0);
     height: 20rem;
     width: 20rem;
-    top: -9%;
-    left: 19%;
+    top: -4%;
+    left: 20%;
   }
 }
 .sphere {
@@ -192,32 +193,32 @@
     width: 6.5rem;
 
     &--1 {
-      bottom: -32rem;
+      bottom: 82rem;
       left: 14%;
     }
 
     &--2 {
-      bottom: -39rem;
+      bottom: 75rem;
       left: 86%;
     }
 
     &--3 {
-      bottom: 0;
+      bottom: 114;
       right: 100%;
     }
 
     &--4 {
-      bottom: -129rem;
+      bottom: -12rem;
       right: -1%;
     }
 
     &--5 {
-      bottom: -122.5rem;
+      bottom: -8.5rem;
       left: 11%;
     }
 
     &--6 {
-      bottom: -130rem;
+      bottom: -16rem;
       left: 30%;
     }
   }
