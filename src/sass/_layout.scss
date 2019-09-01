@@ -139,7 +139,7 @@ nav {
 }
 
 .footer {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $base-color-dark;
   position: relative;
   &__wrapper {
@@ -191,6 +191,23 @@ nav {
 
       .img__wrapper {
         align-self: flex-end;
+      }
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      grid-template-columns: 1fr minmax(200px, 500px) 1fr;
+      grid-template-rows: max-content max-content;
+
+      .quote {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .closing {
+        grid-column: 2;
+        grid-row: 2;
       }
     }
   }
