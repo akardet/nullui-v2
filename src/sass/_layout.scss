@@ -52,7 +52,7 @@ nav {
 }
 
 .about {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   &__wrapper {
     margin-top: 20rem;
     margin-bottom: 50rem;
@@ -76,7 +76,7 @@ nav {
 }
 
 .work {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;
@@ -199,7 +199,6 @@ nav {
     grid-template-columns: 1fr minmax(300px, 450px) 1fr;
     grid-template-rows: 300px 300px auto;
     grid-gap: 9rem 5rem;
-    margin-top: -10rem;
 
     .browser {
       grid-row: 1;
