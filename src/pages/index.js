@@ -157,8 +157,7 @@ export default class IndexPage extends Component {
                 try and deliver a thoughtful and holistic experience for the
                 final product, but also for the person or people I’m working
                 with.
-              </p>
-              <p>
+                <br />
                 If you think I might be the right person for the job, feel free
                 to drop in and tell me more!
               </p>

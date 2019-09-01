@@ -74,6 +74,7 @@ nav {
 }
 
 .work {
+  overflow-x: hidden;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;
@@ -143,11 +144,19 @@ nav {
   position: relative;
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(100px, 500px)) 1fr;
-    grid-column-gap: 5rem;
+    grid-template-columns: 1fr 330px minmax(100px, 500px) 1fr;
+    grid-column-gap: 3rem;
 
     .quote {
+      margin-top: 8rem;
       grid-column: 2;
+    }
+
+    .closing {
+      margin-top: 8rem;
+      display: grid;
+      grid-template-rows: auto;
+      grid-row-gap: 3rem;
     }
   }
 }
