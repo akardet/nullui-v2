@@ -142,13 +142,13 @@ export default class IndexPage extends Component {
           <div className="footer__wrapper">
             <div className="quote">
               <h4 className="subTitle">03. Contact</h4>
-              <h1 data-aos="fade-right">
+              <h1 ddata-aos="fade-right">
                 Design is <br />
                 by the people
                 <br />
                 for the people
               </h1>
-              <h3 data-aos="fade-right">- Judy Wert</h3>
+              <h3 ddata-aos="fade-right">- Judy Wert</h3>
             </div>
             <div className="closing">
               <div className="divider"></div>

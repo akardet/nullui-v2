@@ -57,6 +57,11 @@ nav {
     display: grid;
     grid-template-columns: 1fr minmax(290px, 350px) 92px minmax(290px, 350px) 1fr;
     grid-gap: 3rem;
+
+    h4 {
+      transform: rotate(270deg);
+      transform-origin: 0% 0%;
+    }
   }
 
   & h1 {
@@ -134,37 +139,14 @@ nav {
 
 .footer {
   height: 100vh;
-  position: relative;
   background-color: $base-color-dark;
   &__wrapper {
-    position: relative;
-    max-width: 90rem;
-    margin: 0 auto;
-    padding-top: 15rem;
     display: grid;
-    grid-template-columns: 1fr 50rem;
+    grid-template-columns: 1fr repeat(2, minmax(100px, 500px)) 1fr;
+    grid-column-gap: 5rem;
 
-    h1,
-    h3 {
-      grid-column: 1 / 2;
-    }
-
-    p,
-    .btn {
-      grid-column: 2 / -1;
-    }
-
-    p {
-      margin-bottom: 1rem;
-
-      &:nth-of-type(2),
-      &:last-of-type {
-        margin-bottom: 3rem;
-      }
-    }
-
-    .btn {
-      margin-bottom: 12rem;
+    .quote {
+      grid-column: 2;
     }
   }
 }
@@ -283,5 +265,9 @@ nav {
     .divider {
       grid-column: 2;
     }
+  }
+
+  .work {
+    margin-top: -12rem;
   }
 }

@@ -54,7 +54,7 @@ export default class Work extends Component {
             </h1>
             <h4 className="subTitle">02. Work</h4>
             <div className="work__card--wrapper">
-              <ul ddata-aos="fade-up" ddata-aos-delay="300">
+              <ul data-aos="fade-up" data-aos-delay="300">
                 {data.allContentfulWork.edges.map(({ node: card }) => {
                   return (
                     <li className="work__card">
