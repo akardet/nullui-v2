@@ -105,7 +105,8 @@ export default class IndexPage extends Component {
             <div className="about__wrapper">
               <div className="divider"></div>
               <h1 data-aos="fade-right">
-                Alright, I agree. I think it’s best you get to know me first.
+                Alright, I agree.
+                <br /> I think it’s best you get to know me first.
               </h1>
 
               <h4 className="subTitle">01. About</h4>
