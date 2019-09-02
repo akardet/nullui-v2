@@ -284,7 +284,7 @@ nav {
 
   .footer {
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
 
     .quote {
       grid-column: 1;
@@ -298,6 +298,15 @@ nav {
     .closing {
       grid-column: 1;
       grid-row: 2;
+      justify-content: center;
+
+      p {
+        max-width: 55ch;
+      }
+    }
+
+    &__terms {
+      grid-row: 3;
     }
   }
 }
@@ -330,14 +339,9 @@ nav {
       &__wrapper {
         grid-template-columns: 1fr;
         justify-items: flex-start;
-        grid-template-rows: repeat(5, 80px);
-
-        li {
-          &::after {
-            content: "Text";
-            position: absolute;
-          }
-        }
+        align-items: center;
+        grid-template-rows: repeat(5, min-content);
+        grid-row-gap: 2.5rem;
       }
     }
   }
