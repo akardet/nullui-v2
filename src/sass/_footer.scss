@@ -20,11 +20,8 @@
   }
 
   .closing {
-    display: grid;
-    grid-template-rows: repeat(2, min-content);
-    grid-row-gap: 5rem;
     background-color: hsla(229, 12%, 38%, 0.7);
-    padding: 5rem;
+    padding: 4rem;
 
     p {
       text-align: left;
@@ -32,16 +29,6 @@
 
     a {
       background: rgba(0, 0, 0, 0);
-    }
-
-    .cta {
-      display: grid;
-      grid-template-rows: repeat(2, min-content) 80px;
-      grid-row-gap: 1rem;
-
-      a {
-        justify-self: center;
-      }
     }
 
     &__title {
@@ -78,6 +65,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
   }
 
   &__icon {
@@ -94,7 +82,7 @@
 
   &__container {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: min-content min-content min-content;
     grid-row-gap: 1rem;
   }
 

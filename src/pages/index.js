@@ -144,13 +144,13 @@ export default class IndexPage extends Component {
             <h4 className="subTitle">03. Contact</h4>
             <div className="divider"></div>
 
-            <h1 ddata-aos="fade-right">
+            <h1 data-aos="fade-right">
               Design is <br />
               by the people
               <br />
               for the people
             </h1>
-            <h3 ddata-aos="fade-right">- Judy Wert</h3>
+            <h3 data-aos="fade-right">- Judy Wert</h3>
           </div>
           <div className="closing">
             <div className="cta">
