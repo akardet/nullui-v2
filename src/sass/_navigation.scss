@@ -25,3 +25,12 @@ nav {
     justify-content: flex-end;
   }
 }
+
+@media only screen and (max-width: $ds-small) {
+  nav {
+    ul {
+      grid-gap: 0;
+      justify-items: center;
+    }
+  }
+}
