@@ -140,31 +140,36 @@ export default class IndexPage extends Component {
         <Work />
 
         <section id="contact" className="footer">
-          <div className="footer__wrapper">
-            <div className="quote">
-              <h4 className="subTitle">03. Contact</h4>
-              <h1 ddata-aos="fade-right">
-                Design is <br />
-                by the people
-                <br />
-                for the people
-              </h1>
-              <h3 ddata-aos="fade-right">- Judy Wert</h3>
-            </div>
-            <div className="closing">
+          <div className="quote">
+            <h4 className="subTitle">03. Contact</h4>
+            <div className="divider"></div>
+
+            <h1 ddata-aos="fade-right">
+              Design is <br />
+              by the people
+              <br />
+              for the people
+            </h1>
+            <h3 ddata-aos="fade-right">- Judy Wert</h3>
+          </div>
+          <div className="closing">
+            <div className="cta">
               <div className="divider"></div>
               <p>
-                I love what I do, and find any opportunity as a new challenge to
-                try and deliver a thoughtful and holistic experience for the
+                I love what I do, and find any new challenge as an opportunity
+                to try and deliver a thoughtful and holistic experience for the
                 final product, but also for the person or people I’m working
-                with.
-                <br />
+                with. I'm also currently open to full-time opportunities.
+              </p>
+              <p>
                 If you think I might be the right person for the job, feel free
                 to drop in and tell me more!
               </p>
               <a href="mailto:hello@nullui.co" className="btn cta__btn">
                 Let's Talk
               </a>
+            </div>
+            <div className="social__container">
               <div className="divider"></div>
               <p>
                 If you want to keep up with what I’m working on, or if you just

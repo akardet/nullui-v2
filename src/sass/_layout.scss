@@ -55,13 +55,17 @@ nav {
     margin-top: 20rem;
     margin-bottom: 50rem;
     display: grid;
-    grid-template-columns: 1fr minmax(290px, 400px) 92px minmax(290px, 400px) 1fr;
+    grid-template-columns: 1fr minmax(290px, 375px) 92px minmax(290px, 375px) 1fr;
     grid-gap: 3rem;
 
     h4 {
       transform: rotate(270deg);
       transform-origin: 0% 0%;
     }
+  }
+
+  &__text {
+    justify-self: flex-end;
   }
 
   & h1 {
@@ -74,8 +78,6 @@ nav {
 }
 
 .work {
-  // overflow: hidden;
-  margin-bottom: 10rem;
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 900px) 1fr;
@@ -129,25 +131,33 @@ nav {
 }
 
 .footer {
-  min-height: 100vh;
-  background-color: $base-color-dark;
-  position: relative;
-  &__wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(330px, 500px) 500px 1fr;
+  grid-template-rows: 0px 1fr 200px;
+  grid-gap: 5rem;
+  padding: 2rem;
+
+  .quote {
+    grid-column: 2;
+    grid-row: 2;
+
     display: grid;
-    grid-template-columns: 1fr 330px minmax(100px, 500px) 1fr;
-    grid-column-gap: 3rem;
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 1rem;
+    align-items: flex-start;
+  }
 
-    .quote {
-      margin-top: 8rem;
-      grid-column: 2;
-    }
+  .closing {
+    grid-column: 3;
+    grid-row: 2;
+  }
 
-    .closing {
-      margin-top: 8rem;
-      display: grid;
-      grid-template-rows: auto;
-      grid-row-gap: 3rem;
-    }
+  &__terms {
+    grid-area: terms;
+    grid-column: 1/-1;
+    grid-row: 3;
+    justify-self: center;
+    align-self: flex-end;
   }
 }
 

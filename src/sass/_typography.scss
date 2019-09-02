@@ -60,9 +60,10 @@ small,
 
 @media only screen and (max-width: $ds-small) {
   .work {
-    &__card {
-      .card--title {
+    .card {
+      &__title {
         font-size: var(--h4);
+        // font-weight: 900;
         letter-spacing: 0px;
       }
 

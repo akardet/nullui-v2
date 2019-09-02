@@ -39,24 +39,22 @@
 }
 
 .footer {
-  &__wrapper {
-    .closing {
-      .btn {
-        padding: 1rem 4.5rem;
-        font-size: 1.6rem;
-        border: 1px solid $base-color-white;
-        color: currentColor;
-      }
+  .closing {
+    .btn {
+      padding: 1rem 4.5rem;
+      font-size: 1.6rem;
+      border: 1px solid $base-color-white;
+      color: currentColor;
+    }
 
-      .btn:hover,
-      .btn:focus {
-        background: hsla(229, 12%, 53%, 1);
-      }
+    .btn:hover,
+    .btn:focus {
+      background: hsla(229, 12%, 53%, 1);
+    }
 
-      .btn:focus {
-        outline: 1px solid $base-color-white;
-        outline-offset: -4px;
-      }
+    .btn:focus {
+      outline: 1px solid $base-color-white;
+      outline-offset: -4px;
     }
   }
 }
@@ -94,7 +92,7 @@
 }
 
 .divider {
-  width: 10rem;
-  height: 1rem;
+  width: 12rem;
+  height: 1.1rem;
   margin-bottom: 1.5rem;
 }
