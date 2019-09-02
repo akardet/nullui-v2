@@ -157,9 +157,18 @@ export default class IndexPage extends Component {
               <div className="divider"></div>
               <p>
                 I love what I do, and find any new challenge as an opportunity
-                to try and deliver a thoughtful and holistic experience for the
-                final product, but also for the person or people I’m working
-                with. I'm also currently open to full-time opportunities.
+                to not only deliver a{" "}
+                <em>
+                  <b>thoughtful</b>
+                </em>{" "}
+                and <b>holistic</b> experience for the final product, but also
+                the person, or people, I’m working with.
+              </p>
+              <p>
+                I am also currently open to full-time opportunities that will
+                challenge me as both a <b>developer</b> and a <b>designer</b>. I
+                am not interested in a role that will silo me into being one or
+                the other.
               </p>
               <p>
                 If you think I might be the right person for the job, feel free
@@ -173,7 +182,11 @@ export default class IndexPage extends Component {
               <div className="divider"></div>
               <p>
                 If you want to keep up with what I’m working on, or if you just
-                want to say ‘Hi’, you can find me on the following platforms.
+                want to say{" "}
+                <em>
+                  <b>'Hi'</b>
+                </em>
+                , you can find me on the following platforms.
               </p>
               <Social />
             </div>
