@@ -157,3 +157,36 @@
     }
   }
 }
+
+@media only screen and (max-width: $ds-small) {
+  .work {
+    &__shapes {
+      .sphere {
+        &-1 {
+          top: 115rem;
+          left: 51%;
+        }
+
+        &-2 {
+          top: 53rem;
+          left: 57%;
+        }
+
+        &-3 {
+          top: 17rem;
+          left: -10%;
+        }
+
+        &-4 {
+          top: 99rem;
+          left: -30%;
+        }
+
+        &-5 {
+          top: 141rem;
+          left: -12%;
+        }
+      }
+    }
+  }
+}
