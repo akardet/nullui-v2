@@ -20,7 +20,7 @@ export default function navigation() {
             </a>
           </li>
           <li>
-            <a href="/#contact" className="link">
+            <a href="#contact" className="link">
               contact
             </a>
           </li>

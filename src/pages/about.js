@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Navigation from "../components/navigation"
+import Footer from "../components/footer"
 
 export default function about() {
   return (
@@ -90,6 +91,8 @@ export default function about() {
                 </div>
               </div>
             </section>
+
+            <Footer />
           </div>
         )}
       />

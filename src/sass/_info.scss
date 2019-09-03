@@ -21,6 +21,7 @@
   }
 
   &__wrapper {
+    margin-bottom: 10rem;
     display: grid;
     grid-template-columns: 1fr minmax(320px, 450px) minmax(48ch, 90ch) 1fr 1fr;
     grid-template-rows: 1fr;
