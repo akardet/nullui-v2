@@ -109,6 +109,9 @@
 
 @media only screen and (max-width: $ds-shmedium) {
   .info {
+    &__profilePic {
+      border: solid 1rem #ffffff;
+    }
     &__wrapper {
       .info__text {
         .love {
