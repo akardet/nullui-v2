@@ -63,12 +63,8 @@ export default function about() {
                     I graduated with a degree in <b>Computer Science</b> from
                     the University of North Texas and started my career as a
                     <em> back-end developer</em> for a large financial company.
-                    I quickly found a{" "}
-                    <em>
-                      <b>love</b>
-                    </em>{" "}
-                    for the world of <b>front-end development</b> and{" "}
-                    <b>web design </b>
+                    I quickly found a love for the world of{" "}
+                    <b>front-end development</b> and <b>web design </b>
                     and I’ve been on a never ending journey to make a life for
                     myself around what I love.{" "}
                   </p>
