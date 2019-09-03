@@ -132,7 +132,7 @@ nav {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 330px 1fr minmax(300px, 500px) 1fr;
+  grid-template-columns: 1fr 330px minmax(10px, 170px) minmax(300px, 500px) 1fr;
   grid-template-rows: 1fr minmax(20px, 200px);
   grid-gap: 5rem;
   padding: 2rem;
@@ -331,7 +331,7 @@ nav {
   }
 
   .work {
-    margin-top: -12rem;
+    margin-top: -32rem;
   }
 
   .footer {

@@ -32,6 +32,7 @@
 // }
 
 .cross {
+  --height: 100vh;
   fill: $primary-blue;
   position: absolute;
   width: 6.5rem;
@@ -63,7 +64,7 @@
   }
 
   &--6 {
-    bottom: -44rem;
+    bottom: -56rem;
     left: 28%;
   }
 }
@@ -148,7 +149,7 @@
 @media only screen and (max-width: $ds-small) {
   .background {
     &::before {
-      height: 194rem;
+      height: 197rem;
     }
   }
   .donut {
@@ -186,38 +187,39 @@
   }
 
   .cross {
+    --height: 100vh;
     fill: $primary-blue;
     position: absolute;
     width: 6.5rem;
 
     &--1 {
-      bottom: -104rem;
+      bottom: -129rem;
       left: 14%;
     }
 
     &--2 {
-      bottom: -99rem;
-      left: 86%;
+      bottom: -125rem;
+      left: 83%;
     }
 
     &--3 {
-      bottom: -30rem;
-      right: 0%;
+      bottom: -33rem;
+      right: 12%;
     }
 
     &--4 {
-      bottom: -14rem;
-      right: 13%;
+      bottom: -56rem;
+      right: -4%;
     }
 
     &--5 {
-      bottom: -8.5rem;
+      bottom: -30.5rem;
       left: 11%;
     }
 
     &--6 {
-      bottom: -22rem;
-      left: 30%;
+      bottom: -138rem;
+      left: 69%;
     }
   }
 }
