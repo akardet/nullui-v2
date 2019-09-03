@@ -52,7 +52,11 @@ export default class About extends Component {
                   </div>
                 </div>
                 <div className="info__wrapper">
-                  <div className="picture">
+                  <div
+                    className="picture"
+                    data-aos="zoom-in"
+                    data-aos-duration="700"
+                  >
                     <Img
                       className="info__profilePic"
                       fluid={data.profilePic.childImageSharp.fluid}
@@ -80,7 +84,12 @@ export default class About extends Component {
                       and I’ve been on a never ending journey to make a life for
                       myself around what I love.{" "}
                     </p>
-                    <div className="love">
+                    <div
+                      className="love"
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      _data-aos-offset="500"
+                    >
                       <h4>What I love to do</h4>
                       <ul>
                         <li>UI/UX Design</li>
@@ -91,7 +100,12 @@ export default class About extends Component {
                       </ul>
                     </div>
 
-                    <div className="code">
+                    <div
+                      className="code"
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      _data-aos-offset="500"
+                    >
                       <h4>I code in</h4>
                       <ul>
                         <li>Semantic HTML & (S)CSS</li>
