@@ -9,7 +9,6 @@ import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import Work from "../components/work"
 import DotCross from "../components/svg/dotCross"
-import Arrow from "../components/svg/arrow"
 // import SEO from "../components/seo"
 
 export default class IndexPage extends Component {
