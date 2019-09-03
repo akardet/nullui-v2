@@ -80,7 +80,7 @@
       }
     }
 
-    a[href="resume.pdf"] {
+    a[href*="resume"] {
       grid-column: 1 / -1;
       justify-self: flex-end;
       font-size: 1.4rem;

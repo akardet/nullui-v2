@@ -44,7 +44,7 @@ export default function about() {
                   />
                 </div>
                 <div className="info__text">
-                  <a href="resume.pdf" className="link">
+                  <a href="../../public/resume_2019.pdf" className="link">
                     My Resume
                   </a>
                   <div className="divider"></div>
