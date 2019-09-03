@@ -102,14 +102,6 @@
 
       .info__text {
         grid-column: 2;
-
-        .love {
-          grid-column: span 2;
-        }
-
-        .code {
-          grid-column: span 2;
-        }
       }
     }
   }
@@ -119,9 +111,14 @@
   .info {
     &__wrapper {
       .info__text {
+        .love {
+          grid-column: span 2;
+        }
+
         .code {
-          grid-column: 1;
+          grid-column: span 2;
           grid-row: -1;
+          justify-self: flex-start;
         }
       }
     }
