@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
+import "../sass/main.scss"
 
 export default function about() {
   return (
