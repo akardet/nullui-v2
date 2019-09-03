@@ -1,9 +1,11 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
+
 import AOS from "aos"
 import "aos/dist/aos.css"
 
 import Layout from "../components/layout"
-import Logo from "../components/svg/logo"
+import Navigation from "../components/navigation"
 import Work from "../components/work"
 import DotCross from "../components/svg/dotCross"
 import Arrow from "../components/svg/arrow"
@@ -39,30 +41,7 @@ export default class IndexPage extends Component {
             <DotCross className="cross cross--5"></DotCross>
             <DotCross className="cross cross--6"></DotCross>
           </div>
-          <nav id="navigation">
-            <a className="navigation__logo" href="/">
-              <Logo />
-            </a>
-            <div className="links">
-              <ul>
-                <li>
-                  <a href="#about" className="link">
-                    about
-                  </a>
-                </li>
-                <li>
-                  <a href="#work" className="link">
-                    work
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="link">
-                    contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <Navigation />
           <section id="hero" className="hero">
             <div className="heading">
               <div className="divider"></div>
@@ -127,10 +106,9 @@ export default class IndexPage extends Component {
                 </p>
                 <p>
                   Curious to know a little{" "}
-                  <a href="/" className="about__link">
-                    more about me
-                  </a>
-                  ?
+                  <Link className="about__link" to={`/about`}>
+                    more about me?
+                  </Link>
                 </p>
               </div>
             </div>

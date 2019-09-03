@@ -22,7 +22,7 @@ export default class Work extends Component {
     return (
       <StaticQuery
         query={graphql`
-          query MyQuery {
+          query {
             allContentfulWork(sort: { fields: contentfulid }) {
               edges {
                 node {

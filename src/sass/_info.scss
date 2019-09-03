@@ -1,0 +1,116 @@
+.info {
+  color: $base-color-dark;
+  margin-top: 10rem;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  &__bgImg {
+    width: 70vw;
+    max-width: 820px;
+    min-width: 580px;
+  }
+
+  &__profilePic {
+    border-radius: 50%;
+    border: solid 1.5rem #ffffff;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 450px) minmax(48ch, 90ch) 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5rem;
+
+    .picture {
+      grid-column: 2;
+    }
+
+    .divider {
+      background-color: hsla(228, 92%, 90%, 1);
+    }
+
+    .info__text {
+      grid-column: 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, auto);
+      grid-gap: 1rem;
+
+      h4 {
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      p,
+      .love {
+        grid-column: 1 / -1;
+      }
+
+      .code {
+        grid-column: 2;
+        grid-row: 5;
+        justify-self: flex-end;
+      }
+
+      .love {
+        grid-column: 1;
+      }
+
+      .love,
+      .code {
+        margin-top: 3rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          font-size: var(--p);
+          opacity: 0.6;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    a[href="resume.pdf"] {
+      grid-column: 1 / -1;
+      justify-self: flex-end;
+      font-size: 1.4rem;
+      color: $base-color-dark;
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-medium) {
+  .info {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr minmax(48ch, 90ch) 1fr;
+      grid-template-rows: min-content 1fr;
+      grid-column-gap: 5rem;
+
+      .info__text {
+        grid-column: 2;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-shmedium) {
+  .info {
+    &__wrapper {
+      .info__text {
+        .code {
+          grid-column: 1;
+          grid-row: -1;
+        }
+      }
+    }
+  }
+}
