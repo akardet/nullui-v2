@@ -2,6 +2,7 @@
   color: $base-color-dark;
   margin-top: 10rem;
   &__background {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
