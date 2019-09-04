@@ -84,7 +84,6 @@ export default class About extends Component {
                       className="love"
                       data-aos="fade-up"
                       data-aos-duration="500"
-                      _data-aos-offset="700"
                     >
                       <h4>What I love to do</h4>
                       <ul>
@@ -100,7 +99,6 @@ export default class About extends Component {
                       className="code"
                       data-aos="fade-up"
                       data-aos-duration="500"
-                      _data-aos-offset="700"
                     >
                       <h4>I code in</h4>
                       <ul>

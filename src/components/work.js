@@ -10,7 +10,7 @@ export default class Work extends Component {
   componentDidMount() {
     this.aos = AOS
     this.aos.init({
-      duration: 2200,
+      duration: 1500,
     })
   }
 
