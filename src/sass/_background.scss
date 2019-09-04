@@ -138,11 +138,28 @@
   }
 }
 
+@media only screen and (max-width: $ds-large) {
+  .background {
+    &::before {
+      height: 205rem;
+    }
+  }
+}
+
 @media only screen and (max-width: $ds-medium) {
   .background {
     &::before {
+      height: 225rem;
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 50% 100%, 0 94%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+    }
+  }
+}
+
+@media only screen and (max-width: $ds-725) {
+  .background {
+    &::before {
+      height: 235rem;
     }
   }
 }
