@@ -33,7 +33,6 @@ export default class IndexPage extends Component {
             <div className="donut donut--sm"></div>
             <div className="dots dots--lg"></div>
             <div className="dots dots--sm"></div>
-            {/* <Arrow className="arrow"></Arrow> */}
             <DotCross className="cross cross--1"></DotCross>
             <DotCross className="cross cross--2"></DotCross>
             <DotCross className="cross cross--3"></DotCross>
