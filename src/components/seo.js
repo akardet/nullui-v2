@@ -3,6 +3,17 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+function makeid(length) {
+  var result = ""
+  var characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  var charactersLength = characters.length
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength))
+  }
+  return result
+}
+
 const SEO = ({ title, description, image, pathname, article }) => (
   <StaticQuery
     query={query}
@@ -21,7 +32,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        image: `${siteUrl}${image || defaultImage}` + `${makeid()}`,
         url: `${siteUrl}${pathname || "/"}`,
       }
 
