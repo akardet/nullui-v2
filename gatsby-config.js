@@ -5,8 +5,12 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `nullui`,
-    description: ``,
-    author: `@nullui.co`,
+    titleTemplate: `nullui - Frontend Developer and Designer`,
+    description: `Doing my part to make the web a more beautiful and inclusive place for everyone.`,
+    author: `Sam Tancharoensuksavai`,
+    url: "https://www.nullui.co",
+    image: "/images/thumbnail@2x.png",
+    twitterUsername: "@null_ui",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

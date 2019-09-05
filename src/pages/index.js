@@ -9,7 +9,7 @@ import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import Work from "../components/work"
 import DotCross from "../components/svg/dotCross"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 export default class IndexPage extends Component {
   componentDidMount() {
@@ -26,6 +26,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <Layout>
+        <SEO />
         <div className="background">
           <div className="background__shapes">
             <div className="donut donut--lg"></div>
