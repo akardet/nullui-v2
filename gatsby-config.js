@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `nullui`,
-    titleTemplate: `$s - Frontend Developer and Designer`,
+    titleTemplate: `nullui - Frontend Developer and Designer`,
     description: `Doing my part to make the web a more beautiful and inclusive place for everyone.`,
     author: `Sam Tancharoensuksavai`,
     url: "https://www.nullui.co",
