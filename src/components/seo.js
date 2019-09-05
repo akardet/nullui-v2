@@ -32,7 +32,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}?${makeid()}`,
+        image: `${siteUrl}${image || defaultImage}?${makeid(10)}`,
         url: `${siteUrl}${pathname || "/"}`,
       }
 
