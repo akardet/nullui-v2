@@ -95,7 +95,7 @@ export default class IndexPage extends Component {
                   <b> Freelance Front-end Developer</b> and <b>Designer</b>{" "}
                   based out of Austin, Texas. I have been writing code for about
                   <em>
-                    <b> 6 </b>
+                    <b> 4 </b>
                   </em>
                   years (when are you supposed to officially start counting?).
                   I’m in a constant pursuit to fuse my{" "}
