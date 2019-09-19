@@ -10,6 +10,10 @@
     opacity: 1;
   }
 
+  h4 {
+    text-transform: lowercase;
+  }
+
   .divider {
     background-color: $base-color-lightgrey;
   }
@@ -70,7 +74,6 @@
     box-shadow: $medium-shadow;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
-    text-transform: lowercase;
 
     &:hover {
       transform: translateY(-0.5rem) scale(1.01);

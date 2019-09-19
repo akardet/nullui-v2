@@ -29,6 +29,7 @@ export default class Work extends Component {
                   id
                   title
                   subHeading
+                  url
                   heroImage {
                     fluid(maxWidth: 320) {
                       ...GatsbyContentfulFluid_withWebp
@@ -58,7 +59,7 @@ export default class Work extends Component {
                 {data.allContentfulWork.edges.map(({ node: card }) => {
                   return (
                     <li className="card">
-                      <a href="/" className="card__link">
+                      <a href={card.url} className="card__link">
                         <h2 className="card__title">{card.title}</h2>
                         <h4 className="card__subheading">{card.subHeading}</h4>
                         <div className="card__view">
