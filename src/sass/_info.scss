@@ -79,11 +79,17 @@
       }
     }
 
-    a[href*="resume"] {
-      grid-column: 1 / -1;
+    a[href] {
       justify-self: flex-end;
       font-size: 1.4rem;
+      font-weight: 700;
+      opacity: 0.6;
       color: $base-color-dark;
+
+      &:hover {
+        color: $base-color-accent;
+        opacity: 1;
+      }
     }
   }
 }

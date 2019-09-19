@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Navigation from "../components/navigation"
@@ -60,6 +60,12 @@ export default class About extends Component {
                   </div>
                   <div className="info__text">
                     <div className="divider"></div>
+                    <a
+                      href="https://drive.google.com/open?id=1eUmAi9YvvwXbFMUwpUtxSk47CC4cC23r"
+                      className="link"
+                    >
+                      Download my Resume
+                    </a>
                     <p>
                       <b>
                         I believe that design is a fundamental part of the world
